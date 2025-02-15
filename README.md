@@ -1,3 +1,3 @@
 # AI
 
-[Local LLM tests](Local%20LLM%20tests.md)
+[Local LLM tests](https://github.com/donatas-xyz/AI/discussions/1)
