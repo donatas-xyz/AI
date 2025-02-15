@@ -13,3 +13,5 @@
 * [Open WebUI](https://docs.openwebui.com)
 
 ### Tests
+
+* [WSL (Ubuntu) vs Windows 11](https://github.com/donatas-xyz/AI/blob/dev/WSL%20(Ubuntu)%20vs%20Windows%2011.md)
