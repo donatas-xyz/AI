@@ -14,4 +14,4 @@
 
 ### Tests
 
-* [WSL (Ubuntu) vs Windows 11](https://github.com/donatas-xyz/AI/blob/dev/WSL%20(Ubuntu)%20vs%20Windows%2011.md)
+* [WSL (Ubuntu) vs Windows 11](WSL%20(Ubuntu)%20vs%20Windows%2011.md)
