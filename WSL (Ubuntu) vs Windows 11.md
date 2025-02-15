@@ -12,7 +12,7 @@
             <td colspan=2><kbd>ollama run deepseek-r1:32b --verbose</kbd></td>
         </tr>
         <tr>
-			<td>Query</td>
+			<td>Prompt</td>
             <td colspan=2><kbd>Who are you?</kbd></td>
         </tr>
         <tr>
