@@ -34,7 +34,7 @@
 					prompt eval rate:     6.83 tokens/s <br>
 					eval count:           44 token(s) <br>
 					eval duration:        13.675s <br>
-					eval rate:            3.22 tokens/s <br>
+					eval rate:            3.22 tokens/s
 				</samp>
 			</td>
             <td>
@@ -46,7 +46,7 @@
 					prompt eval rate:     4.29 tokens/s <br>
 					eval count:           44 token(s) <br>
 					eval duration:        13.908s <br>
-					eval rate:            3.16 tokens/s <br>
+					eval rate:            3.16 tokens/s
 				</samp>
 			</td>
         </tr>
