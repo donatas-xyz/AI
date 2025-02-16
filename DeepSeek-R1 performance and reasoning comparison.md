@@ -374,7 +374,7 @@
 				</samp>
 			</td>
         </tr>
-				<tr>
+		<tr>
 			<td>deepseek-r1:14b</td>
             <td>
 				<samp>
@@ -586,6 +586,121 @@
 					6. Catherine Parr (1547) <br><br>
 					So, the answer is that Henry VIII had six wives in order: Catherine of Aragon, Anne Boleyn, Jane Seymour, Anna of
 					Cleves, Kathryn Howard, and Catherine Parr. <br><br>
+					</think>
+				</samp>
+			</td>
+        </tr>
+		<tr>
+			<td>deepseek-r1:32b</td>
+            <td>
+				<samp>
+					<think>
+					Okay, so I need to figure out how to list all the marriage dates and wives of Henry VIII. Hmm, I remember that
+					Henry VIII is famous for having six wives, but I'm not exactly sure about all their names or the specific dates he
+					married them. Let me try to recall. <br><br>
+					First, I think his first wife was Catherine of Aragon. She was Spanish, right? Their marriage started around the
+					early 1500s. I believe it was before Henry became king because they were married when Arthur, Henry's brother,
+					died, and then Henry inherited the throne. So maybe their wedding was in 1509? <br><br>
+					Then, after his first marriage ended, he married Anne Boleyn. That must have been around the mid-1520s or early
+					1530s. I think Anne was executed later on, so her reign as queen didn't last long. <br><br>
+					Next, Jane Seymour comes to mind. She was Henry's third wife, and I remember she died shortly after giving birth
+					to Edward VI. Her marriage must have been around the time after Anne's execution, perhaps in 1536. <br><br>
+					After Jane, there was Anne of Cleves. I think this marriage didn't last long either because Henry found her
+					unattractive or something like that. They were married for a short period, maybe around 1540, and then they
+					annulled the marriage quickly. <br><br>
+					Then came Catherine Howard. She was another wife who faced execution, if I'm not mistaken. Her marriage was after
+					Anne of Cleves, so probably in the early to mid-1540s. And finally, his sixth wife was Catherine Parr, who
+					survived him and outlived all the others. <br><br>
+					Wait, let me try to get the order right: Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine
+					Howard, and then Catherine Parr. That makes six wives in total. <br><br>
+					Now, regarding the dates, I need to be precise. Let's see: <br><br>
+					1. Catherine of Aragon married Henry on June 11, 1509. They were married until their annulment in 1533. <br>
+					2. Anne Boleyn was married on May 28, 1533, and she was executed in 1536. <br>
+					3. Jane Seymour's marriage took place on May 30, 1536, and she died in 1537 after giving birth to Edward. <br>
+					4. Anne of Cleves married Henry on January 6, 1540, but the marriage was annulled in 1542. <br>
+					5. Catherine Howard's wedding was on July 28, 1540, and she was executed in 1542. <br>
+					6. Finally, Catherine Parr married Henry on July 12, 1543, and survived him after his death in 1547. <br><br>
+					Wait, did I mix up the dates between Anne of Cleves and Catherine Howard? Let me double-check: Anne of Cleves was
+					married first, around January 1540, then Catherine Howard followed a few months later. Or maybe they were married
+					around the same time? No, I think Anne of Cleves's marriage was in early 1540, and Catherine Howard came after
+					that. <br><br>
+					Also, Henry VIII died in 1547, so Catherine Parr would have been his wife until then. <br><br>
+					So, to summarize: <br><br>
+					1. Catherine of Aragon: married June 11, 1509; annulment 1533. <br>
+					2. Anne Boleyn: married May 28, 1533; executed 1536. <br>
+					3. Jane Seymour: married May 30, 1536; died 1537. <br>
+					4. Anne of Cleves: married January 6, 1540; annulment 1542. <br>
+					5. Catherine Howard: married July 28, 1540; executed 1542. <br>
+					6. Catherine Parr: married July 12, 1543; survived Henry. <br><br>
+					Wait a second, that doesn't seem right. Because if Anne of Cleves was married in January 1540 and then Anne Howard
+					in July 1540, but actually, I think after the annulment of Anne of Cleves, he married Catherine Howard. So perhaps
+					the timeline is: <br><br>
+					After Jane Seymour's death (1537), Henry married Anne of Cleves in 1540, which didn't work out and was annulled in
+					1542. Then, he married Catherine Howard in the same year, but she was executed shortly after. Finally, Catherine
+					Parr came in 1543. <br><br>
+					So the correct order is: <br><br>
+					- Catherine of Aragon (married 1509) <br>
+					- Anne Boleyn (married 1533) <br>
+					- Jane Seymour (married 1536) <br>
+					- Anne of Cleves (married 1540) <br>
+					- Catherine Howard (married 1540 or 1541?) <br>
+					- Catherine Parr (married 1543) <br><br>
+					I might have the exact years mixed up a bit, but I think that's the general timeline. Let me confirm some key
+					points: <br><br>
+					- Henry became king in 1509 after his father Henry VII died. <br>
+					- He married Catherine of Aragon that same year. <br>
+					- Their marriage lasted until he sought an annulment to marry Anne Boleyn, which happened in 1533. <br>
+					- Jane Seymour was married right after Anne's execution in 1536. <br>
+					- Then came the disastrous marriages with Anne of Cleves and Catherine Howard, both in the early 1540s. <br>
+					- Finally, Catherine Parr, who was a more stable marriage until Henry's death. <br><br>
+					I think that's correct. So compiling all this information, I can list each wife with her marriage date.
+					</think>
+				</samp>
+			</td>
+        </tr>
+		<tr>
+			<td>deepseek-r1:70b</td>
+            <td>
+				<samp>
+					<think>
+					Alright, so I need to list all the marriage dates and wives of Henry VIII. Hmm, okay. Let me think about this.
+					Henry VIII is famous for having six wives, right? I remember that much from history class. <br><br>
+					First off, his first wife was Catherine of Aragon. She was the daughter of the King of Spain, I believe. They were
+					married for a long time, but then he wanted to divorce her because she didn't produce a male heir. But when did
+					they get married exactly? I think it was in the early 1500s. Maybe around 1509? <br><br>
+					Then, after Catherine, he married Anne Boleyn. She was English, one of Catherine's ladies-in-waiting. He broke
+					away from the Catholic Church because the Pope wouldn't annul his marriage to Catherine so he could marry Anne.
+					They got married in secret, I think. That would be around 1533. <br><br>
+					Anne Boleyn didn't last long though. She was executed after a few years, something about adultery and treason. So
+					then Henry married Jane Seymour. She gave him a son, Edward VI, but she died soon after childbirth. Their marriage
+					was probably right after Anne's execution in 1536. <br><br>
+					After Jane, Henry married Anne of Cleves. This was a German princess, and the marriage was arranged based on a
+					portrait of her. But when they met, Henry didn't like her and the marriage didn't work out. They divorced pretty
+					quickly, maybe within a year? So that would be around 1540. <br><br>
+					Next up was Catherine Howard. She was young and vivacious, but also had affairs while married to Henry. He had her
+					executed too. Their marriage must have been after Anne of Cleves, so around 1540 as well, but ended in 1542. <br><br>
+					Lastly, Henry's sixth wife was Catherine Parr. She survived him and helped bring stability to the family. They
+					married in 1543, I think, and she remained his wife until he died in 1547. <br><br>
+					Wait, let me make sure about the dates. Catherine of Aragon: June 1509? Or maybe earlier? Wait, Henry VII arranged
+					their marriage after Arthur's death. Arthur died in 1502, so maybe they married in 1509 when Henry VIII became
+					king after his father's death in 1509. <br><br>
+					Anne Boleyn was married in January 1533, I think that's correct. Jane Seymour in May 1536, right after Anne's
+					execution in May 1536. <br><br>
+					Then Anne of Cleves in January 1540, but the marriage only lasted a few months, annulled by July 1540. <br><br>
+					Catherine Howard was married in July 1540, just days after the annulment from Anne. She was executed in February
+					1542. <br><br>
+					Finally, Catherine Parr in July 1543 and she survived Henry VIII, who died in January 1547. <br><br>
+					I think that's all. So to summarize: <br><br>
+					1. Catherine of Aragon - June 1509 <br>
+					2. Anne Boleyn - January 1533 <br>
+					3. Jane Seymour - May 1536 <br>
+					4. Anne of Cleves - January 1540 (annulled) <br>
+					5. Catherine Howard - July 1540 <br>
+					6. Catherine Parr - July 1543 <br><br>
+					I should double-check the exact dates to make sure I'm accurate. Let me see, Henry VIII died in 1547, so Catherine
+					Parr was his wife until then. <br><br>
+					Yes, that seems right. Each marriage ended either by death or annulment except for the last one with Catherine
+					Parr. <br><br>
 					</think>
 				</samp>
 			</td>
