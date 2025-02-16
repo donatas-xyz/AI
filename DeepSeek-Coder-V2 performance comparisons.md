@@ -1,10 +1,11 @@
-<table>
+<table style="width:100%">
+	<caption>DeepSeek-Coder-V2 performance comparison</caption>
     <thead>
         <tr>
-			<th></th>
-			<th>deepseek-coder-v2:16b</th>
-            <th>deepseek-coder-v2:16b-lite-instruct-q8_0</th>
-            <th>deepseek-coder-v2:16b-lite-instruct-fp16</th>
+			<th style="width:10%"></th>
+			<th style="width:30%">deepseek-coder-v2:16b</th>
+            <th style="width:30%">deepseek-coder-v2:16b-lite-instruct-q8_0</th>
+            <th style="width:30%">deepseek-coder-v2:16b-lite-instruct-fp16</th>
         </tr>
     </thead>
     <tbody>
@@ -77,4 +78,9 @@
 			</td>
         </tr>
     </tbody>
+	<tfoot>
+		<tr>
+		  <td colspan=4>* <a href="https://github.com/donatas-xyz/AI/discussions/1">Setup used</a></td>
+		</tr>
+	</tfoot>
 </table>
