@@ -265,7 +265,7 @@
 </table>
 
 <table style="width:100%">
-	<caption><a href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener noreferrer">DeepSeek-R1</a> performance and accuracy comparison (1.5B, 8B)</caption>
+	<caption><a href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener noreferrer">DeepSeek-R1</a> performance and reasoning comparison (1.5B, 8B)</caption>
     <thead>
         <tr>
 			<th style="width:10%"></th>
@@ -363,18 +363,88 @@
 				</samp>
 			</td>
         </tr>
+		<tr>
+			<td>Prompt</td>
+            <td colspan=2><kbd>If I hang 5 shirts outside and it takes them 5 hours to dry, how long would it take to dry 30 shirts?</kbd></td>
+        </tr>
+        <tr>
+			<td>Response</td>
+            <td>
+				<samp>
+					The problem of determining how long it takes to dry 30 shirts when 5 shirts require 5 hours to dry can be
+					approached by considering both theoretical and practical aspects. <br><br>
+					1. **Mathematical Approach**:
+					   - Assuming a linear relationship, where the drying time is directly proportional to the number of shirts.
+					   - If 5 shirts take 5 hours, then each shirt takes 1 hour.
+					   - Therefore, 30 shirts would take \( 30 \times 1 = 60 \) hours. <br><br>
+					2. **Practical Considerations**:
+					   - The drying time may not strictly scale linearly due to factors such as air movement, material complexity, and
+					the possibility of overlapping drying processes.
+					   - In reality, practical drying times could be longer than the theoretical calculation due to these factors. <br><br>
+					Conclusion: Based on a purely mathematical assumption, it would take 60 hours for 30 shirts to dry. However, in
+					practice, the actual time required might vary slightly due to additional factors that influence the drying process.
+				</samp>
+			</td>
+			<td>
+				<samp>
+					**Solution:** <br><br>
+					Let's analyze the problem step by step. <br><br>
+					1. **Determine the Time per Shirt:** <br><br>
+					   - If 5 shirts take 5 hours to dry, then:
+						 \[
+						 \text{Time per shirt} = \frac{\text{Total Time}}{\text{Number of Shirts}} = \frac{5\ \text{hours}}{5\
+					\text{shirts}} = 1\ \text{hour per shirt}
+						 \] <br><br>
+					2. **Calculate the Time for 30 Shirts:** <br><br>
+					   - Since each shirt takes 1 hour to dry and drying time is not affected by the number of shirts, the time
+					required to dry 30 shirts remains:
+						 \[
+						 \boxed{\dfrac{30\ \text{shirts}}{1\ \text{shirt per hour}} = 30\ \text{hours}}
+						 \] <br><br>
+					**Final Answer:** <br><br>
+					It would take **30 hours** for 30 shirts to dry.
+				</samp>
+			</td>
+        </tr>
+        <tr>
+			<td>Results</td>
+            <td>
+				<samp>
+					total duration:       5.1544433s <br>
+					load duration:        17.817ms <br>
+					prompt eval count:    432 token(s) <br>
+					prompt eval duration: 36ms <br>
+					prompt eval rate:     12000.00 tokens/s <br>
+					eval count:           1006 token(s) <br>
+					eval duration:        4.898s <br>
+					eval rate:            205.39 tokens/s
+				</samp>
+			</td>
+            <td>
+				<samp>
+					total duration:       4.1207211s <br>
+					load duration:        18.8975ms <br>
+					prompt eval count:    31 token(s) <br>
+					prompt eval duration: 393ms <br>
+					prompt eval rate:     78.88 tokens/s <br>
+					eval count:           291 token(s) <br>
+					eval duration:        3.707s <br>
+					eval rate:            78.50 tokens/s
+				</samp>
+			</td>
+        </tr>
     </tbody>
 	<tfoot>
 		<tr>
 		  <td colspan=3>
 			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
-			* <a href="https://www.youtube.com/watch?v=kgSMRmW2frA&t=834s" target="_blank" rel="noopener noreferrer">Test questions source</a> <br>
+			* <a href="https://www.youtube.com/watch?v=kgSMRmW2frA&t=834s" target="_blank" rel="noopener noreferrer">"List all the marriage dates and wives of Henry VIII"</a> <br>
+			* <a href="https://www.reddit.com/r/LocalLLaMA/comments/13zz8y5/comment/jmumwuz/" target="_blank" rel="noopener noreferrer">"If I hang 5 shirts outside and it takes them 5 hours to dry, how long would it take to dry 30 shirts?"</a> <br>
 			* All tests were performed on a fresh model load with no prior context and with the default settings.
 		  </td>
 		</tr>
 	</tfoot>
 </table>
-
 <table style="width:100%">
 	<caption><a href="https://ollama.com/library/deepseek-r1" target="_blank" rel="noopener noreferrer">DeepSeek-R1</a> reasoning comparison</caption>
     <thead>
