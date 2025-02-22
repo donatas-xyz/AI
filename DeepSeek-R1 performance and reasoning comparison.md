@@ -30,34 +30,34 @@
             <td>
 				<samp>
 					Henry VIII had six wives in the following order: <br><br>
-					1. **Catherine of Aragon** (married 1509) <br>
-					2. **Anne Boleyn** (married 1533) <br>
-					3. **Jane Seymour** (married 1536) <br>
-					4. **Anna of Cleves** (married 1540) <br>
-					5. **Kathryn Howard** (married 1543, executed 1544) <br>
-					6. **Catherine Parr** (married 1547) <br><br>
+					1. Catherine of Aragon (married 1509) <br>
+					2. Anne Boleyn (married 1533) <br>
+					3. Jane Seymour (married 1536) <br>
+					4. Anna of Cleves (married 1540) <br>
+					5. Kathryn Howard (married 1543, executed 1544) <br>
+					6. Catherine Parr (married 1547) <br><br>
 					This order reflects the sequence of their marriages and notable events such as Kathryn Howard's execution.
 				</samp>
 			</td>
 			<td>
 				<samp>
 					Henry VIII, King of England, married six times during his reign. Here is an organized list of his marriages, detailing the wives and their respective marriage dates: <br><br>
-					1. **Catherine of Aragon** <br>
+					1. Catherine of Aragon <br>
 					   - Marriage Date: June 11, 1509 <br>
 					   - Divorce/Annulment: Annulled in 1533 <br>
-					2. **Anne Boleyn** <br>
+					2. Anne Boleyn <br>
 					   - Marriage Date: May 28, 1533 <br>
 					   - Execution: Executed on May 19, 1536 <br>
-					3. **Jane Seymour** <br>
+					3. Jane Seymour <br>
 					   - Marriage Date: May 30, 1536 <br>
 					   - Death: Died on October 24, 1537, after giving birth to Edward VI <br>
-					4. **Anne of Cleves** <br>
+					4. Anne of Cleves <br>
 					   - Marriage Date: January 6, 1540 <br>
 					   - Divorce/Annulment: Annulled in July 1540 <br>
-					5. **Catherine Howard** <br>
+					5. Catherine Howard <br>
 					   - Marriage Date: July 28, 1540 (Note: Some sources suggest the marriage may have been consummated later) <br>
 					   - Execution: Executed on February 13, 1542 <br>
-					6. **Catherine Parr** <br>
+					6. Catherine Parr <br>
 					   - Marriage Date: July 12, 1543 <br>
 					   - Survival: Survived Henry VIII after his death in 1547 <br><br>
 					This list provides a clear timeline of Henry VIII's marriages, highlighting the progression of his unions and their outcomes.
@@ -66,22 +66,22 @@
 			<td>
 				<samp>
 					Henry VIII, known for his six marriages, wed each of his wives on the following dates: <br><br>
-					1. **Catherine of Aragon** <br>
+					1. Catherine of Aragon <br>
 					   - Married: June 11, 1509 <br>
 					   - Ended: May 23, 1533 (annulled) <br>
-					2. **Anne Boleyn** <br>
+					2. Anne Boleyn <br>
 					   - Married: January 25, 1533 <br>
 					   - Ended: May 19, 1536 (executed) <br>
-					3. **Jane Seymour** <br>
+					3. Jane Seymour <br>
 					   - Married: May 30, 1536 <br>
 					   - Ended: October 24, 1537 (died after childbirth) <br>
-					4. **Anne of Cleves** <br>
+					4. Anne of Cleves <br>
 					   - Married: January 6, 1540 <br>
 					   - Ended: July 12, 1540 (annulled) <br>
-					5. **Catherine Howard** <br>
+					5. Catherine Howard <br>
 					   - Married: July 28, 1540 <br>
 					   - Ended: February 13, 1542 (executed) <br>
-					6. **Catherine Parr** <br>
+					6. Catherine Parr <br>
 					   - Married: July 12, 1543 <br>
 					   - Ended: January 28, 1547 (Henry's death) <br><br>
 					Each marriage concluded due to annulment, execution, or natural causes, except for his final marriage to Catherine Parr, who survived him.
@@ -135,46 +135,46 @@
 			<td>Response</td>
             <td>
 				<samp>
-					**Solution:** <br><br>
+					Solution: <br><br>
 					We can solve this problem by understanding that the drying time for multiple shirts depends on how many shirts are
 					being dried at the same time. <br><br>
-					1. **Determine the Drying Rate:** <br><br>
-					   - If **5 shirts** dry in **5 hours**, then each shirt takes: <br><br>
+					1. Determine the Drying Rate: <br><br>
+					   - If 5 shirts dry in 5 hours, then each shirt takes: <br><br>
 						 \[
 						 \text{Drying Time per Shirt} = \frac{5\ \text{hours}}{5\ \text{shirts}} = 1\ \text{hour per shirt}
 						 \] <br><br>
 					   However, this interpretation assumes that the drying time decreases with more shirts, which isn't typically how
 					parallel processes work. A more accurate approach is to consider that all shirts dry simultaneously. <br><br>
-					2. **Assuming Parallel Drying:** <br><br>
-					   - If **5 shirts** are dried together and it takes **5 hours**, then adding more shirts won't change the drying
+					2. Assuming Parallel Drying: <br><br>
+					   - If 5 shirts are dried together and it takes 5 hours, then adding more shirts won't change the drying
 					time as long as they are all being dried at the same time. <br><br>
-					3. **Drying 30 Shirts:** <br><br>
-					   - Since all shirts dry simultaneously, drying **30 shirts** would still take the same amount of time as drying
-					**5 shirts**, assuming you have enough space to hang them all outside. <br><br>
+					3. Drying 30 Shirts: <br><br>
+					   - Since all shirts dry simultaneously, drying 30 shirts would still take the same amount of time as drying
+					5 shirts, assuming you have enough space to hang them all outside. <br><br>
 					   \[
 					   \text{Total Drying Time} = 5\ \text{hours}
 					   \] <br><br>
-					**Final Answer:** <br><br>
+					Final Answer: <br><br>
 					\boxed{5\ \text{hours}}
 				</samp>
 			</td>
 			<td>
 				<samp>
-					To determine how long it would take to dry **30 shirts**, let's analyze the situation step by step. <br><br>
+					To determine how long it would take to dry 30 shirts, let's analyze the situation step by step. <br><br>
 					### Given:
-					- **Number of shirts initially hung out:** 5 shirts
-					- **Time taken for these shirts to dry completely:** 5 hours <br><br>
+					- Number of shirts initially hung out: 5 shirts
+					- Time taken for these shirts to dry completely: 5 hours <br><br>
 					### Key Assumption:
 					Assuming all shirts are drying simultaneously on separate clotheslines. This means each shirt dries independently,
 					and the time it takes for one shirt to dry is the same regardless of how many shirts are being dried at the same
 					time. <br><br>
 					### Calculation: <br><br>
-					1. **Drying Rate per Shirt:**
+					1. Drying Rate per Shirt:
 					   - Since 5 shirts take 5 hours to dry:
 						 \[
 						 \text{Time per shirt} = 5 \text{ hours}
 						 \] <br><br>
-					2. **Time to Dry 30 Shirts:**
+					2. Time to Dry 30 Shirts:
 					   - If all 30 shirts are hung out simultaneously, each shirt will still take the same amount of time to dry
 					completely.
 					   - Therefore:
@@ -189,22 +189,22 @@
 			</td>
 			<td>
 				<samp>
-					To determine how long it will take to dry **30 shirts**, let's analyze the situation step by step. <br><br>
+					To determine how long it will take to dry 30 shirts, let's analyze the situation step by step. <br><br>
 					### Given:
-					- **5 shirts** take **5 hours** to dry. <br><br>
+					- 5 shirts take 5 hours to dry. <br><br>
 					### Understanding the Drying Rate:
-					1. **Drying Rate per Shirt:**
+					1. Drying Rate per Shirt:
 					   - If 5 shirts take 5 hours, each shirt individually takes:
 						 \[
 						 \text{Time per shirt} = \frac{\text{Total Time}}{\text{Number of Shirts}} = \frac{5\ \text{hours}}{5\
 					\text{shirts}} = 1\ \text{hour per shirt}
 						 \]
-					2. **Drying Multiple Shirts Simultaneously:**
+					2. Drying Multiple Shirts Simultaneously:
 					   - When drying shirts simultaneously, the total time required depends on how many shirts can be dried at once.
-					   - Assuming you have enough space to hang all shirts outside at the same time, each shirt still takes **1 hour**
+					   - Assuming you have enough space to hang all shirts outside at the same time, each shirt still takes 1 hour
 					to dry. <br><br>
 					### Calculating Time for 30 Shirts:
-					- Since all **30 shirts** can be hung out at the same time and each takes **1 hour** to dry, the total drying time
+					- Since all 30 shirts can be hung out at the same time and each takes 1 hour to dry, the total drying time
 					remains:
 					  \[
 					  \boxed{1\ \text{hour}}
@@ -293,17 +293,17 @@
             <td>
 				<samp>
 					Henry VIII, born on August 15, 1567, is a key figure in English history. He was the sixth King of England and seventh/第八 King of France. His notable marriages are as follows: <br><br>
-					1. **First Marriage**: 1574 - Castile de Meurs <br>
-					   - **Married to:** Castile de Meurs <br>
-					   - **Wife:** Castile de Meurs <br>
-					2. **Second Marriage**: 1579 - Castile de Mazarin <br>
-					   - **Married to:** Castile de Mazarin <br>
-					   - **Wife:** Castile de Mazarin <br>
-					3. **Third Marriage**: 1576 - Castile de Flandre <br>
-					   - **Married to:** Castile de Flandre <br>
-					   - **Wife:** Castile de Flandre <br><br>
+					1. First Marriage: 1574 - Castile de Meurs <br>
+					   - Married to: Castile de Meurs <br>
+					   - Wife: Castile de Meurs <br>
+					2. Second Marriage: 1579 - Castile de Mazarin <br>
+					   - Married to: Castile de Mazarin <br>
+					   - Wife: Castile de Mazarin <br>
+					3. Third Marriage: 1576 - Castile de Flandre <br>
+					   - Married to: Castile de Flandre <br>
+					   - Wife: Castile de Flandre <br><br>
 					Henry VIII's third marriage completed in 1576, during which he had children. After this marriage, he became King of France and later the Holy See. <br><br>
-					**Final Answer:** <br><br>
+					Final Answer: <br><br>
 					- Henry VIII was first married to Castile de Meurs on September 28, 1574. <br>
 					- He then married again to Castile de Mazarin on April 6, 1579. <br>
 					- His third marriage was completed with Castile de Flandre on October 4, 1576. <br><br>
@@ -313,25 +313,25 @@
 			<td>
 				<samp>
 					Henry VIII, famous for his multiple marriages and contributions to the English Reformation, had six official marriages, each followed by an annulment except for his final union with Catherine Parr. Here is a structured overview of his marriages: <br><br>
-					1. **Catherine of Aragon** <br>
-					   - **Marriage Date**: 1509 <br>
-					   - **Annulled**: 1534 (on grounds of her supposed affair with Henry Mannix, a Roma manuscript suggests). <br>
-					2. **Anne Boleyn** <br>
-					   - **Marriage Date**: 1536 <br>
-					   - **Annulled**: 1537 (due to accusations of adultery and incest; later posthumously cleared by Thomas Cromwell). <br>
-					3. **Jane Seymour** <br>
-					   - **Marriage Date**: 1537 <br>
-					   - **Deceased**: 1537 (died shortly after giving birth to Edward VI, their only son). <br>
-					4. **Anna of Cleves** <br>
-					   - **Marriage Date**: 1540 <br>
-					   - **Annulled**: 1541 (due to Henry's dissatisfaction with her appearance and accusations of infertility). <br>
-					5. **Mary Jane** <br>
+					1. Catherine of Aragon <br>
+					   - Marriage Date: 1509 <br>
+					   - Annulled: 1534 (on grounds of her supposed affair with Henry Mannix, a Roma manuscript suggests). <br>
+					2. Anne Boleyn <br>
+					   - Marriage Date: 1536 <br>
+					   - Annulled: 1537 (due to accusations of adultery and incest; later posthumously cleared by Thomas Cromwell). <br>
+					3. Jane Seymour <br>
+					   - Marriage Date: 1537 <br>
+					   - Deceased: 1537 (died shortly after giving birth to Edward VI, their only son). <br>
+					4. Anna of Cleves <br>
+					   - Marriage Date: 1540 <br>
+					   - Annulled: 1541 (due to Henry's dissatisfaction with her appearance and accusations of infertility). <br>
+					5. Mary Jane <br>
 					   - Also known as the "Ninth Wife" or "Dowager Queen." <br>
-					   - **Marriage Date**: 1543 (though some sources suggest she was a morganatic wife, not officially crowned). <br>
-					   - **Annulled**: 1544. <br>
-					6. **Catherine Parr** <br>
-					   - **Marriage Date**: 1547 <br>
-					   - **No Annulment**: Henry died in 1547, so this marriage remained valid until his death. <br><br>
+					   - Marriage Date: 1543 (though some sources suggest she was a morganatic wife, not officially crowned). <br>
+					   - Annulled: 1544. <br>
+					6. Catherine Parr <br>
+					   - Marriage Date: 1547 <br>
+					   - No Annulment: Henry died in 1547, so this marriage remained valid until his death. <br><br>
 					This list highlights the complexity of Henry's marital history, marked by political motivations and changes in religious stance, particularly with the rise of Protestantism. Each marriage, except the last, was annulled to allow remarriage, reflecting the theological and political landscape of the time.
 				</samp>
 			</td>
@@ -373,11 +373,11 @@
 				<samp>
 					The problem of determining how long it takes to dry 30 shirts when 5 shirts require 5 hours to dry can be
 					approached by considering both theoretical and practical aspects. <br><br>
-					1. **Mathematical Approach**:
+					1. Mathematical Approach:
 					   - Assuming a linear relationship, where the drying time is directly proportional to the number of shirts.
 					   - If 5 shirts take 5 hours, then each shirt takes 1 hour.
 					   - Therefore, 30 shirts would take \( 30 \times 1 = 60 \) hours. <br><br>
-					2. **Practical Considerations**:
+					2. Practical Considerations:
 					   - The drying time may not strictly scale linearly due to factors such as air movement, material complexity, and
 					the possibility of overlapping drying processes.
 					   - In reality, practical drying times could be longer than the theoretical calculation due to these factors. <br><br>
@@ -387,22 +387,21 @@
 			</td>
 			<td>
 				<samp>
-					**Solution:** <br><br>
+					Solution: <br><br>
 					Let's analyze the problem step by step. <br><br>
-					1. **Determine the Time per Shirt:** <br><br>
+					1. Determine the Time per Shirt: <br><br>
 					   - If 5 shirts take 5 hours to dry, then:
 						 \[
-						 \text{Time per shirt} = \frac{\text{Total Time}}{\text{Number of Shirts}} = \frac{5\ \text{hours}}{5\
-					\text{shirts}} = 1\ \text{hour per shirt}
-						 \] <br><br>
-					2. **Calculate the Time for 30 Shirts:** <br><br>
+						\text{Time per shirt} = \frac{\text{Total Time}}{\text{Number of Shirts}} = \frac{5\ \text{hours}}{5\ \text{shirts}} = 1\ \text{hour per shirt}
+						\] <br><br>
+					2. Calculate the Time for 30 Shirts: <br><br>
 					   - Since each shirt takes 1 hour to dry and drying time is not affected by the number of shirts, the time
 					required to dry 30 shirts remains:
 						 \[
 						 \boxed{\dfrac{30\ \text{shirts}}{1\ \text{shirt per hour}} = 30\ \text{hours}}
 						 \] <br><br>
-					**Final Answer:** <br><br>
-					It would take **30 hours** for 30 shirts to dry.
+					Final Answer: <br><br>
+					It would take 30 hours for 30 shirts to dry.
 				</samp>
 			</td>
         </tr>
