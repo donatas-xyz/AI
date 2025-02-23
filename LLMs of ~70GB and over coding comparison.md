@@ -20,33 +20,68 @@
 			</td>
         </tr>
         <tr>
-			<td>wizardlm2:8x22b-q4_0 ✔️</td>
+			<td>mistral-large:123b (73GB) ✔️</td>
             <td>
 <pre>
-function removeSpecifiedElement(jsonString) {
-	// Parse the JSON string into an array of objects
-	let jsonArray = JSON.parse(jsonString); <br>
-	// Filter out the specified element
-	let filteredArray = jsonArray.filter(obj => {
-		return !(obj.role === "user" && 
-		obj.content === "Return a JSON object that uses the SAY command to say what you're thinking.");
-	}); <br>
-	// Convert the filtered array back into a JSON string
-	let updatedJsonString = JSON.stringify(filteredArray); <br>
-	return updatedJsonString;
+function removeSpecificElements(jsonString) {
+    // Parse the input JSON string into an array of objects
+    let jsonArray = JSON.parse(jsonString); <br>
+    // Define the specific content to be removed
+    const targetContent = "Return a JSON object that uses the SAY command to say what you're thinking."; <br>
+    // Filter out elements with the specified role and content
+    let filteredArray = jsonArray.filter(item => !(item.role === 'user' && item.content === targetContent)); <br>
+    // Convert the filtered array back into a JSON string
+    return JSON.stringify(filteredArray);
 } <br>
 // Example usage:
-const originalJsonString = `[
-	{"role": "system", "content": "Hello, how can I assist you?"},
-	{"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
-	{"role": "assistant", "content": "I'm thinking about how to best help you today."}
+const inputJsonString = `[
+  {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role": "system", "content": "Hello World"},
+  {"role": "assistant", "content": "I am thinking about coding"}
 ]`; <br>
-const updatedJsonString = removeSpecifiedElement(originalJsonString);
-console.log(updatedJsonString);
+const outputJsonString = removeSpecificElements(inputJsonString);
+console.log(outputJsonString);
 </pre>
 		</td>
+		</tr>
+		        <tr>
+			<td>llama3.3:70b-instruct-q8_0 (74GB) ✔️</td>
+            <td>
+<pre>
+/**
+ * Removes elements with the specified role and content from a given JSON string.
+ *
+ * @param {string} jsonString The input JSON string.
+ * @param {string} targetRole The target role to remove.
+ * @param {string} targetContent The target content to remove.
+ * @returns {string} The filtered JSON string.
+ */
+function removeElements(jsonString, targetRole = 'user', targetContent) {
+    // Parse the JSON string into a JavaScript object
+    let jsonObject = JSON.parse(jsonString); <br>
+    // Filter out elements with the specified role and content
+    if (Array.isArray(jsonObject)) {
+        jsonObject = jsonObject.filter(element => !(element.role === targetRole && element.content.includes(targetContent)));
+    } else if (typeof jsonObject === 'object') {
+        for (let key in jsonObject) {
+            if (Array.isArray(jsonObject[key])) {
+                jsonObject[key] = jsonObject[key].filter(element => !(element.role === targetRole && element.content.includes(targetContent)));
+            }
+        }
+    } <br>
+    // Stringify the filtered object back into a JSON string
+    return JSON.stringify(jsonObject, null, 4);
+} <br>
+// Example usage:
+const jsonString = '[{"role": "admin", "content": "Hello"}, {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you\'re thinking."}, {"role": "moderator", "content": "World"}]';
+const targetRole = 'user';
+const targetContent = 'Return a JSON object that uses the SAY command to say what you'; <br>
+console.log(removeElements(jsonString, targetRole, targetContent));
+</pre>
+		</td>
+		</tr>
 		<tr>
-		<td>qwq:32b-preview-fp16 ✔️</td>
+		<td>qwq:32b-preview-fp16 (65GB) ✔️</td>
 		<td>
 <pre>
 function removeUserElements(jsonString) {
@@ -102,6 +137,31 @@ console.log(removeUserElements(inputJson));
 </pre>
 			</td>
 			</tr>
+		<td>wizardlm2:8x22b-q4_0 (79GB) ✔️</td>
+            <td>
+<pre>
+function removeSpecifiedElement(jsonString) {
+	// Parse the JSON string into an array of objects
+	let jsonArray = JSON.parse(jsonString); <br>
+	// Filter out the specified element
+	let filteredArray = jsonArray.filter(obj => {
+		return !(obj.role === "user" && obj.content === "Return a JSON object that uses the SAY command to say what you're thinking.");
+	}); <br>
+	// Convert the filtered array back into a JSON string
+	let updatedJsonString = JSON.stringify(filteredArray); <br>
+	return updatedJsonString;
+} <br>
+// Example usage:
+const originalJsonString = `[
+	{"role": "system", "content": "Hello, how can I assist you?"},
+	{"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
+	{"role": "assistant", "content": "I'm thinking about how to best help you today."}
+]`; <br>
+const updatedJsonString = removeSpecifiedElement(originalJsonString);
+console.log(updatedJsonString);
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
