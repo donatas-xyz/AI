@@ -1,5 +1,5 @@
 <table style="width:100%">
-	<caption>LLMs of ~40GB and coding comparison</caption>
+	<caption>LLMs of ~40GB coding comparison</caption>
     <thead>
         <tr>
 			<th style="width:10%">Model</th>
