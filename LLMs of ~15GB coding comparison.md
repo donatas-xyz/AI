@@ -104,6 +104,7 @@ console.log(removeElementFromJson(jsonString, elementToRemove));
 </pre>
 			</td>
 			</tr>
+	    <tr>
 		<td>gemma2:27b (15GB) ✔️⚠️</td>
             <td>
 <pre>
