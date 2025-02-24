@@ -124,6 +124,7 @@ console.log(result);
 </pre>
 			</td>
 			</tr>
+	    <tr>
 		<td>deepseek-r1:32b-qwen-distill-q8_0 (34GB) ✔️</td>
             <td>
 <pre>
