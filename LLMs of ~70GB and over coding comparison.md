@@ -137,6 +137,7 @@ console.log(removeUserElements(inputJson));
 </pre>
 			</td>
 			</tr>
+	    <tr>
 		<td>wizardlm2:8x22b-q4_0 (79GB) ✔️</td>
             <td>
 <pre>
