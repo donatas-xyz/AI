@@ -20,20 +20,26 @@
 			</td>
         </tr>
         <tr>
-			<td>granite3.1-dense:8b-instruct-fp16 (16GB) ❌️</td>
+			<td>granite3.2:8b-instruct-fp16 (16GB) ❌️</td>
             <td>
 <pre>
-function removeUserNonSayElements(jsonString) {
-    let jsonObj = JSON.parse(jsonString); <br>   
-    // Filter out elements where role is 'user' and content doesn't contain 'SAY'
-    const filteredArray = jsonObj.filter(element =>
-      element.role !== "user" || element.content.includes("SAY")
-    ); <br>   
-    // Convert the filtered array back into a JSON string
-    return JSON.stringify(filteredArray);
-  } <br> 
-const jsonString = `[{"role": "assistant", "content": "I am thinking..."}, {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."}, {"role": "assistant", "content": "Sure, I'm saying..."}]`;
-console.log(removeUserNonSayElements(jsonString));
+function removeSAYCommand(jsonString) {
+  // Parse JSON string into a JavaScript object
+  let jsonObject = JSON.parse(jsonString); <br>
+  // Check if 'content' property exists and contains the "SAY" command
+  if (jsonObject.hasOwnProperty("content") && 
+      jsonObject.content.toLowerCase().includes("say")) { <br>
+      // Delete the 'content' property
+      delete jsonObject.content;
+  } <br>
+  // Convert JavaScript object back into JSON string
+  return JSON.stringify(jsonObject);
+} <br>
+let jsonString = `{
+  "role": "user",
+  "content": "SAY I'm thinking something."
+}`; <br>
+console.log(removeSAYCommand(jsonString));
 </pre>
 		</td>
 		</tr>
