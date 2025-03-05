@@ -1,29 +1,37 @@
 <table style="width:100%">
-	<caption><a href="https://ollama.com/library/llava" target="_blank" rel="noopener noreferrer">LLaVA</a> vs <a href="https://ollama.com/library/llama3.2-vision" target="_blank" rel="noopener noreferrer">Llama3.2</a> tests (34B vs 90B)</caption>
+	<caption><a href="https://ollama.com/library/granite3.2-vision" target="_blank" rel="noopener noreferrer">Granite3.2</a> vs <a href="https://ollama.com/library/llava" target="_blank" rel="noopener noreferrer">LLaVA</a> vs <a href="https://ollama.com/library/llama3.2-vision" target="_blank" rel="noopener noreferrer">Llama3.2</a> tests (2B vs 34B vs 90B)</caption>
     <thead>
         <tr>
 			<th style="width:10%"></th>
-			<th style="width:45%">llava:34b-v1.6-q8_0</th>
-			<th style="width:45%">llama3.2-vision:90b-instruct-q8_0</th>
+			<th style="width:30%">granite3.2-vision:2b-fp16</th>
+			<th style="width:30%">llava:34b-v1.6-q8_0</th>
+			<th style="width:30%">llama3.2-vision:90b-instruct-q8_0</th>
         </tr>
     </thead>
     <tbody>
         <tr>
 			<td>Size</td>
+			<td>8.8 GB</td>
 			<td>38 GB</td>
 			<td>101 GB</td>
         </tr>
 		<tr>
 			<td>Processing</td>
+			<td>100% GPU</td>
 			<td>72%/28% CPU/GPU</td>
 			<td>89%/11% CPU/GPU</td>
         </tr>
         <tr>
 		<td>Response</td>
+			<td>
+				<img src="https://github.com/user-attachments/assets/3629a19d-7464-431f-8340-7ac5ce1af30f" alt="Granite3.2 - What does the sign say and in what language?">
+			    <img src="https://github.com/user-attachments/assets/49a49dd7-c042-4a77-9a03-bb9be32c70c4" alt="Granite3.2 - What timeline is this cannon from?">
+				<img src="https://github.com/user-attachments/assets/43c283ad-b8f1-424d-85b7-c74ee698d2a8" alt="Granite3.2 - Which tree does this belong to and is it native to UK?">
+			</td>
             <td>
-              <img src="https://github.com/user-attachments/assets/185ef8ab-f1e1-4b27-adca-2cfbd3c5ae2a" alt="LLaVA - What does the sign say and in what language?">
-<img src="https://github.com/user-attachments/assets/b956a48c-9e78-4816-b90b-e094d5f592a6" alt="LLaVA - What timeline is this cannon from?">
-<img src="https://github.com/user-attachments/assets/30bb154b-4b5d-4edf-bb78-ad77d89440d1" alt="LLaVA - Which tree does this belong to and is it native to UK?">
+				<img src="https://github.com/user-attachments/assets/185ef8ab-f1e1-4b27-adca-2cfbd3c5ae2a" alt="LLaVA - What does the sign say and in what language?">
+			    <img src="https://github.com/user-attachments/assets/b956a48c-9e78-4816-b90b-e094d5f592a6" alt="LLaVA - What timeline is this cannon from?">
+				<img src="https://github.com/user-attachments/assets/30bb154b-4b5d-4edf-bb78-ad77d89440d1" alt="LLaVA - Which tree does this belong to and is it native to UK?">
 			</td>
 			<td>
 				<img src="https://github.com/user-attachments/assets/3edddd11-b9f3-47b4-be05-77c81ee08829" alt="Llama - What does the sign say and in what language?">
@@ -33,6 +41,18 @@
         </tr>
 		<tr>
 			<td>Results</td>
+			<td>
+				<samp>
+					total duration:       3.1295685s <br>
+					load duration:        74.5903ms <br>
+					prompt eval count:    7349 token(s) <br>
+					prompt eval duration: 2.852s <br>
+					prompt eval rate:     2576.79 tokens/s <br>
+					eval count:           10 token(s) <br>
+					eval duration:        171ms <br>
+					eval rate:            58.48 tokens/s
+				</samp>
+			</td>
             <td>
 				<samp>
 					total duration:       1m39.3982339s <br>
@@ -61,7 +81,7 @@
     </tbody>
 	<tfoot>
 		<tr>
-		  <td colspan=3>
+		  <td colspan=4>
 			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
 			* All tests were performed on a fresh model load with no prior context and with the default settings.
 		  </td>
