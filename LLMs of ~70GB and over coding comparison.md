@@ -81,59 +81,35 @@ console.log(removeElements(jsonString, targetRole, targetContent));
 		</td>
 		</tr>
 		<tr>
-		<td>qwq:32b-preview-fp16 (65GB) ✔️</td>
+		<td>qwq:32b-fp16 (66GB) ✔️</td>
 		<td>
 <pre>
-function removeUserElements(jsonString) {
-  const obj = JSON.parse(jsonString);
-  const specificContent = "Return a JSON object that uses the SAY command to say what you're thinking."; <br>
-  function clean(item) {
-    if (Array.isArray(item)) {
-      let cleanedArray = item.filter(el => !isMatchingUserObject(el)).map(clean);
-      return cleanedArray.length > 0 ? cleanedArray : [];
-    } else if (typeof item === 'object' && item !== null) {
-      if (isMatchingUserObject(item)) {
-        return {};
-      } else {
-        const cleanedObj = {};
-        for (const [key, value] of Object.entries(item)) {
-          const cleanedValue = clean(value);
-          if (Object.keys(cleanedValue).length > 0 || typeof cleanedValue !== 'object') {
-            cleanedObj[key] = cleanedValue;
-          }
-        }
-        return Object.keys(cleanedObj).length > 0 ? cleanedObj : {};
-      }
-    } else {
-      return item;
-    }
-  } <br>
-  function isMatchingUserObject(obj) {
-    return obj.role === 'user' && obj.content === specificContent;
-  } <br>
-  const cleaned = clean(obj);
-  return JSON.stringify(cleaned);
-}
-// Example usage:
-const inputJson = `{
-  "messages": [
-    {
-      "role": "user",
-      "content": "Return a JSON object that uses the SAY command to say what you're thinking."
-    },
-    {
-      "role": "assistant",
-      "content": "Okay, here it is.",
-      "data": [
-        {
-          "role": "user",
-          "content": "Return a JSON object that uses the SAY command to say what you're thinking."
-        }
-      ]
-    }
-  ]
-}`; <br>
-console.log(removeUserElements(inputJson));
+function removeSpecificElements(jsonString) {
+  // The exact content to match for removal
+  const targetContent = "Return a JSON object that uses the SAY command to say what you're thinking."; <br>
+  try {
+    // Parse the input JSON string into an array of objects
+    const parsedData = JSON.parse(jsonString); <br>   
+    if (!Array.isArray(parsedData)) {
+      throw new Error("Input must be a valid JSON array");
+    } <br>
+    // Filter out items matching both role and content exactly
+    const filteredData = parsedData.filter(item => 
+      !(item.role === 'user' && item.content === targetContent)
+    ); <br>
+    // Convert back to JSON string with pretty formatting (optional)
+    return JSON.stringify(filteredData, null, 2); <br>  
+  } catch (error) {
+    console.error("Error processing JSON:", error.message);
+    throw error;
+  }
+} <br>
+const inputJson = `[  
+  {"role": "user", "content": "Some other content"},
+  {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role": "system", "content": "Another message"}
+]`; <br>
+console.log(removeSpecificElements(inputJson));
 </pre>
 			</td>
 			</tr>
