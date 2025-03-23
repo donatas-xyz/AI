@@ -68,6 +68,103 @@ Let me know if you'd like me to focus on a specific part of the image or if you 
 </pre>
 		</td>
 		</tr>
+        <tr>
+		<td>llama3.2-vision:90b-instruct-q8_0 (95GB) ✔️⚠️</td>
+		<td>
+<pre>
+The image presents a map of Ilam Park and Dovedale, accompanied by a list of walking routes. 
+The map is divided into two sections: the left side features a numbered list with corresponding images, while the right side displays a detailed topographical map. <br>
+**Walking Routes:** <br>
+*   **Route 1:** St Bertram's Bridge - This route takes you across the picturesque St Bertram's Bridge, offering stunning views of the surrounding countryside.
+*   **Route 2:** Paradise Walk - Embark on this leisurely stroll along the River Manifold, taking in the serene beauty of the natural surroundings.
+*   **Route 3:** Boil Holes - Explore the unique geological formations known as Boil Holes, a fascinating feature of the local landscape.
+*   **Route 4:** Dovedale - Discover the breathtaking scenery of Dovedale, with its towering cliffs and crystal-clear streams. <br>
+**Map Features:** <br>
+*   **Ilam Park:** A large park area marked on the map, featuring walking trails, gardens, and historic buildings.
+*   **Dovedale:** A scenic valley with steep cliffs, wooded slopes, and a meandering river.
+*   **River Manifold:** A winding river that flows through Dovedale, providing picturesque views and tranquil atmosphere.
+*   **Footpaths:** Several footpaths are indicated on the map, allowing visitors to explore the area on foot. <br>
+**Key:** <br>
+*   **P:** Car park locations
+*   **I:** Information points or visitor centers
+*   **WC:** Toilets <br>
+Overall, this image provides a comprehensive guide for visitors planning to explore Ilam Park and Dovedale. 
+By following the walking routes and utilizing the map features, individuals can experience the natural beauty and historical significance of these areas.
+</pre>
+		</td>
+		</tr>
+        <tr>
+		<td>granite3.2-vision:2b-fp16 (6GB) ⚠️</td>
+		<td>
+<pre>
+<doc> Make the most of your day 
+ Walking route between Ilam 
+ Park and the Stepping Stones in 
+ Buy one of our El postcard Explore the Italian Garden 1 walks from Ilam Park shop 5nd Pleasure Grounds to Church St Bernam’s 
+ Dovedale, avoiding roads (½ miles) of the 
+ or Dovedale Barn find tranquil places to sit 
+ Holy Cross Bridge 
+ and take in the views 
+ Stepping Stones Troppe Cloud Well 
+ Ilam Park rest-room garden Take a look inside the 
+ Church of the Holy Cross. 
+ Buy an orienteering map 
+ from Ilam Park shop Follow the Ilam Park round 
+ walk (orange route on 
+ park level)  path) to see the angler 
+ for       ridge and furrow and 
+ beginners   parkland trees. 
+ Explore a little further 
+ Pleasure 
+ Grounds Grotto 
+ Here are five great places to explore on your visit to Ilam 4 Hickley 
+ Park and Dovedale (see the numbers on the map). 
+ Bridge 
+ Stableyard 
+ 1 St Bernam’s Bridge is an 
+ ancient bridge over the Cattle-free Steps 
+ River Manifold, but it’s also a 
+ footpath 
+ great spot to play pooh sticks. with no sites Ilam Park 2 
+ (drystone wall) Round Walk 
+ (route: ½ miles) 
+ 2 Paradise Walk is a peaceful 
+ lime tree avenue, carpeted 
+ Church 
+ with wild garlic in spring and 
+ Ilam Hall buzzing with bees in summer. 
+ 3 See the Bail Holes, where 
+ you can see from underground 
+ to join the River Manifold. 
+ Battle Stone 
+ 4 Walk to Dovedale on a 
+ quiet and picturesque 
+ route across the fields. 
+ Footbridge 
+ NOTE: A new Hinkley Bridge is due to open in 2019. 
+ Hinkley Bridge 
+ (closed) St Dorrans 
+ Bridge 
+ 100 metres 
+ Hinkley Wood 
+ Crown bapham and destase rights 2019 Ordnance Survey 10025874 </doc>
+</pre>
+		</td>
+		</tr>
+        <tr>
+		<td>llava:34b-v1.6-q8_0 (37GB) ❌️</td>
+		<td>
+<pre>
+Sure, I can help with the text in the image. It appears to be a map of some sort and there are various texts overlaid on it: <br>
+- In the top left corner, there's a small text that reads "make the most of your day" followed by what seems to be a list or title that is too small to read clearly.
+- Below that, in larger font, it says "EXPLORE YOUR AREA" which is likely part of an activity guide or similar informational material.
+- In the center, there's a small arrow pointing to something on the map with the text "10" next to it, possibly indicating a place of interest or marker number 10 on the map.
+- To the right, there's another arrow and the number "9", which could be referring to another location or point of interest. <br>
+The image itself is quite small and lacks clear resolution, so identifying specific details with precision is difficult. 
+If you need a more detailed description or if there are other texts on the map that are not visible due to the size of the image, please provide a clearer or larger version.
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
