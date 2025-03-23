@@ -9,7 +9,7 @@
     <tbody>
         <tr>
 			<td colspan=2>
-				<img src="https://github.com/user-attachments/assets/f51f43a1-6066-4256-bb9d-dd624ac85184" alt="Can you read this for me?" />
+				<a href="https://github.com/donatas-xyz/AI/blob/dev/Resources/Ilam%20Park%202.jpg"><img src="https://github.com/user-attachments/assets/f51f43a1-6066-4256-bb9d-dd624ac85184" alt="Can you read this for me?" /></a>
 			</td>
         </tr>
         <tr>
