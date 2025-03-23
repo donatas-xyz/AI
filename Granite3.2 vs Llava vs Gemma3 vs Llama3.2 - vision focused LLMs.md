@@ -27,24 +27,24 @@
         <tr>
 		<td>Response</td>
 			<td>
-				<img src="https://github.com/user-attachments/assets/3629a19d-7464-431f-8340-7ac5ce1af30f" alt="Granite3.2 - What does the sign say and in what language?">
-			    <img src="https://github.com/user-attachments/assets/49a49dd7-c042-4a77-9a03-bb9be32c70c4" alt="Granite3.2 - What timeline is this cannon from?">
-				<img src="https://github.com/user-attachments/assets/43c283ad-b8f1-424d-85b7-c74ee698d2a8" alt="Granite3.2 - Which tree does this belong to and is it native to UK?">
+				<img src="https://github.com/user-attachments/assets/3629a19d-7464-431f-8340-7ac5ce1af30f" alt="Granite3.2 - What does the sign say and in what language?"/>
+			        <img src="https://github.com/user-attachments/assets/49a49dd7-c042-4a77-9a03-bb9be32c70c4" alt="Granite3.2 - What timeline is this cannon from?"/>
+				<img src="https://github.com/user-attachments/assets/43c283ad-b8f1-424d-85b7-c74ee698d2a8" alt="Granite3.2 - Which tree does this belong to and is it native to UK?"/>
 			</td>
             <td>
-				<img src="https://github.com/user-attachments/assets/185ef8ab-f1e1-4b27-adca-2cfbd3c5ae2a" alt="LLaVA - What does the sign say and in what language?">
-			    <img src="https://github.com/user-attachments/assets/b956a48c-9e78-4816-b90b-e094d5f592a6" alt="LLaVA - What timeline is this cannon from?">
-				<img src="https://github.com/user-attachments/assets/30bb154b-4b5d-4edf-bb78-ad77d89440d1" alt="LLaVA - Which tree does this belong to and is it native to UK?">
+				<img src="https://github.com/user-attachments/assets/185ef8ab-f1e1-4b27-adca-2cfbd3c5ae2a" alt="LLaVA - What does the sign say and in what language?"/>
+			    <img src="https://github.com/user-attachments/assets/b956a48c-9e78-4816-b90b-e094d5f592a6" alt="LLaVA - What timeline is this cannon from?"/>
+				<img src="https://github.com/user-attachments/assets/30bb154b-4b5d-4edf-bb78-ad77d89440d1" alt="LLaVA - Which tree does this belong to and is it native to UK?"/>
 			</td>
 			<td>
-				<img src="https://github.com/user-attachments/assets/8f19fcc5-c134-4a14-be03-405b0231a2ae" alt="Gemma3 - What does the sign say and in what language?">
-				<img src="https://github.com/user-attachments/assets/4e066c22-6578-4ccd-aeed-4923f0e6afdd" alt="Gemma3 - What timeline is this cannon from?">
-				<img src="https://github.com/user-attachments/assets/b5299350-cb3c-424b-8f28-29c750413b38" alt="Gemma3 - Which tree does this belong to and is it native to UK?">
+				<img src="https://github.com/user-attachments/assets/8f19fcc5-c134-4a14-be03-405b0231a2ae" alt="Gemma3 - What does the sign say and in what language?"/>
+				<img src="https://github.com/user-attachments/assets/4e066c22-6578-4ccd-aeed-4923f0e6afdd" alt="Gemma3 - What timeline is this cannon from?"/>
+				<img src="https://github.com/user-attachments/assets/b5299350-cb3c-424b-8f28-29c750413b38" alt="Gemma3 - Which tree does this belong to and is it native to UK?"/>
 			</td>
 			<td>
-				<img src="https://github.com/user-attachments/assets/3edddd11-b9f3-47b4-be05-77c81ee08829" alt="Llama - What does the sign say and in what language?">
-				<img src="https://github.com/user-attachments/assets/9b961042-48ad-4f7d-af46-2833c56ac11f" alt="Llama - What timeline is this cannon from?">
-				<img src="https://github.com/user-attachments/assets/874b1b77-720e-45ec-b96c-9e6c82b805e9" alt="Llama - Which tree does this belong to and is it native to UK?">
+				<img src="https://github.com/user-attachments/assets/3edddd11-b9f3-47b4-be05-77c81ee08829" alt="Llama - What does the sign say and in what language?"/>
+				<img src="https://github.com/user-attachments/assets/9b961042-48ad-4f7d-af46-2833c56ac11f" alt="Llama - What timeline is this cannon from?"/>
+				<img src="https://github.com/user-attachments/assets/874b1b77-720e-45ec-b96c-9e6c82b805e9" alt="Llama - Which tree does this belong to and is it native to UK?"/>
 			</td>
         </tr>
 		<tr>
