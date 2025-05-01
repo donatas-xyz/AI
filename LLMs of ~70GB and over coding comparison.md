@@ -143,35 +143,39 @@ console.log(removeElements(jsonString, targetRole, targetContent));
 		</td>
 		</tr>
 		<tr>
-		<td>qwq:32b-fp16 (66GB) ✔️</td>
+		<td>qwen3:32b-fp16 (66GB) ✔️</td>
 		<td>
 <pre>
-function removeSpecificElements(jsonString) {
-  // The exact content to match for removal
-  const targetContent = "Return a JSON object that uses the SAY command to say what you're thinking."; <br>
+function removeUserSAYCommands(jsonString) {
   try {
-    // Parse the input JSON string into an array of objects
-    const parsedData = JSON.parse(jsonString); <br>   
-    if (!Array.isArray(parsedData)) {
-      throw new Error("Input must be a valid JSON array");
-    } <br>
-    // Filter out items matching both role and content exactly
-    const filteredData = parsedData.filter(item => 
-      !(item.role === 'user' && item.content === targetContent)
-    ); <br>
-    // Convert back to JSON string with pretty formatting (optional)
-    return JSON.stringify(filteredData, null, 2); <br>  
+      // Step 1: Parse the JSON string into an array of objects
+      const data = JSON.parse(jsonString); <br>
+      // Step 2: Filter out the matching elements
+      const filteredData = data.filter(item => 
+          item.role !== 'user' ||
+          item.content !== 'Return a JSON object that uses the SAY command to say what you\'re thinking.'
+      ); <br>
+      // Step 3: Convert the modified array back to a JSON string
+      return JSON.stringify(filteredData, null, 2); // Optional: pretty-printed with 2 spaces <br>
   } catch (error) {
-    console.error("Error processing JSON:", error.message);
-    throw error;
+      // Handle invalid JSON input
+      throw new Error('Invalid JSON input: ' + error.message);
   }
 } <br>
-const inputJson = `[  
-  {"role": "user", "content": "Some other content"},
-  {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
-  {"role": "system", "content": "Another message"}
-]`; <br>
-console.log(removeSpecificElements(inputJson));
+const input = `
+[
+  {
+    "role": "user",
+    "content": "Return a JSON object that uses the SAY command to say what you're thinking."
+  },
+  {
+    "role": "assistant",
+    "content": "I understand the request."
+  }
+]
+`; <br>
+const result = removeUserSAYCommands(input);
+console.log(result);
 </pre>
 			</td>
 			</tr>
