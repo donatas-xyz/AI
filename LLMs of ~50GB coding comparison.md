@@ -111,6 +111,32 @@ console.log("Cleaned Invalid JSON:\n", cleanedInvalidJson);
 </pre>
 		</td>
 		</tr>
+        <tr>
+			<td>devstral:24b-small-2505-fp16 (47GB) ✔️</td>
+            <td>
+<pre>
+function removeSpecificElements(jsonString) {
+  // Parse the JSON string into a JavaScript object
+  const jsonObject = JSON.parse(jsonString); <br>
+  if (Array.isArray(jsonObject)) {
+    // Filter out elements that match the specific structure
+    return JSON.stringify(
+      jsonObject.filter(item =>
+        !item.role || item.role !== "user" ||
+        !item.content || item.content !== "Return a JSON object that uses the SAY command to say what you're thinking."
+      )
+    );
+  } <br>
+  // If the top-level element is not an array, return the original string
+  return jsonString;
+} <br>
+// Example usage:
+const inputJson = `[{"role": "user", "content": "Hello"}, {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."}]`;
+const resultJson = removeSpecificElements(inputJson);
+console.log(resultJson);
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
