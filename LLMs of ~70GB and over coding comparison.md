@@ -179,6 +179,55 @@ console.log(result);
 </pre>
 			</td>
 			</tr>
+		<tr>
+		<td>qwen3-coder:30b-a3b-fp16 (61GB) ✔️</td>
+		<td>
+<pre>
+function removeUserThinkingElement(jsonString) {
+    try {
+        // Parse the JSON string into an array/object
+        const parsed = JSON.parse(jsonString); <br>        
+        // If it's an array, filter out the specific object
+        if (Array.isArray(parsed)) {
+            const filtered = parsed.filter(item => 
+                !(item.role === "user" && 
+                  item.content === "Return a JSON object that uses the SAY command to say what you're thinking.")
+            );
+            return JSON.stringify(filtered, null, 2);
+        } <br>        
+        // If it's an object, check if it matches the target and return empty object or handle accordingly
+        if (typeof parsed === 'object' && parsed !== null) {
+            // For objects, we can't simply remove elements without knowing the structure
+            // This would require more specific logic based on your use case
+            console.warn("Input is an object, not an array. Consider restructuring for proper filtering.");
+            return jsonString;
+        } <br>        
+        return jsonString;
+    } catch (error) {
+        console.error("Invalid JSON string:", error);
+        return jsonString;
+    }
+} <br>
+// Example usage:
+const inputJson = `[
+    {
+        "role": "user",
+        "content": "Hello"
+    },
+    {
+        "role": "user",
+        "content": "Return a JSON object that uses the SAY command to say what you're thinking."
+    },
+    {
+        "role": "assistant",
+        "content": "Hi there!"
+    }
+]`; <br>
+const result = removeUserThinkingElement(inputJson);
+console.log(result);
+</pre>
+			</td>
+			</tr>
 	    <tr>
 		<td>wizardlm2:8x22b-q4_0 (79GB) ✔️</td>
             <td>
