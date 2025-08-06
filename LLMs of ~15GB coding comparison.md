@@ -130,6 +130,62 @@ console.log(cleanedJson); // Output: '[{"role": "assistant", "content": "I am th
 </pre>
 		</td>
 		</tr>
+	    <tr>
+		<td>gpt-oss:20b (13GB) ✔️</td>
+            <td>
+<pre>
+function removeSpecificElements(jsonString) {
+  const target = {
+    role: "user",
+    content:
+      "Return a JSON object that uses the SAY command to say what you're thinking."
+  }; <br>  
+  // Helper that tells if a value is exactly the target object.
+  const isTarget = (obj) =>
+    typeof obj === "object" &&
+    obj !== null &&
+    Object.keys(obj).length === 2 &&
+    obj.role === target.role &&
+    obj.content === target.content; <br>  
+  // Recursive traversal: filter arrays, prune objects, leave primitives as‑is.
+  const traverse = (node) => {
+    if (Array.isArray(node)) {
+      // Filter out target objects and recurse into the rest.
+      return node
+        .filter((item) => !isTarget(item))
+        .map(traverse);
+    } else if (node && typeof node === "object") {
+      const cleaned = {};
+      for (const [key, value] of Object.entries(node)) {
+        if (!isTarget(value)) {
+          cleaned[key] = traverse(value);
+        }
+        // else: skip the key/value pair – it's removed
+      }
+      return cleaned;
+    }
+    // Primitive value – just return it.
+    return node;
+  }; <br>  
+  // Parse, clean, and string‑ify again.
+  const parsed = JSON.parse(jsonString);
+  const cleaned = traverse(parsed);
+  return JSON.stringify(cleaned, null, 2); // pretty print
+} <br>  
+const raw = `[
+  {"role":"assistant","content":"Hello!"},
+  {"role":"user","content":"Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role":"assistant","content":"Sure!"},
+  {
+    "role":"user",
+    "content":"Return a JSON object that uses the SAY command to say what you're thinking."
+  },
+  {"role":"assistant","content":"Goodbye!"}
+]`; <br>  
+console.log(removeSpecificElements(raw));
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
