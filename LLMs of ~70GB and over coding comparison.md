@@ -274,6 +274,76 @@ console.log(output); // Output: [{"role":"assistant","content":"Hello"}]
 </pre>
 		</td>
 		</tr>
+        <tr>
+			<td>gpt-oss:120b (65GB) ✔️</td>
+            <td>
+<pre>
+function removeTargetElements(jsonStr) {
+  // The exact object we want to filter out
+  const TARGET = {
+    role: "user",
+    content: "Return a JSON object that uses the SAY command to say what you're thinking."
+  }; <br>
+  // Helper: deep equality check for plain objects (no cycles, no functions)
+  function isDeepEqual(a, b) {
+    // Quick reference equality / primitive check
+    if (a === b) return true; <br>
+    // Must be objects (and not null) to continue
+    if (typeof a !== "object" || a === null ||
+        typeof b !== "object" || b === null) {
+      return false;
+    } <br>
+    // Different number of own properties → not equal
+    const aKeys = Object.keys(a);
+    const bKeys = Object.keys(b);
+    if (aKeys.length !== bKeys.length) return false; <br>
+    // Compare each key/value recursively
+    for (const key of aKeys) {
+      if (!b.hasOwnProperty(key) || !isDeepEqual(a[key], b[key])) {
+        return false;
+      }
+    }
+    return true;
+  } <br>
+  try {
+    // Parse the incoming JSON. It can be an array, an object, or any valid JSON.
+    const data = JSON.parse(jsonStr); <br>
+    // If the top‑level value is an array, filter it.
+    if (Array.isArray(data)) {
+      const filtered = data.filter(item => !isDeepEqual(item, TARGET));
+      return JSON.stringify(filtered);
+    } <br>
+    // If the top‑level value is an object that might contain arrays (e.g. {messages: [...]})
+    // we’ll walk through its own enumerable properties and filter any arrays we find.
+    if (typeof data === "object" && data !== null) {
+      const clone = { ...data }; // shallow copy of the top‑level object
+      for (const key of Object.keys(clone)) {
+        if (Array.isArray(clone[key])) {
+          clone[key] = clone[key].filter(item => !isDeepEqual(item, TARGET));
+        }
+      }
+      return JSON.stringify(clone);
+    } <br>
+    // For any other JSON shape (string, number, etc.) we just return it unchanged.
+    return jsonStr;
+  } catch (e) {
+    // If parsing fails, log the error (optional) and return the original string.
+    console.error("removeTargetElements – Invalid JSON supplied:", e);
+    return jsonStr;
+  }
+} <br>
+// Input JSON string (an array of message objects)
+const input = `[
+  {"role":"assistant","content":"Hello!"},
+  {"role":"user","content":"Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role":"assistant","content":"Sure, here's the object..."},
+  {"role":"user","content":"Another user message"}
+]`; <br>
+const output = removeTargetElements(input);
+console.log(output);
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
