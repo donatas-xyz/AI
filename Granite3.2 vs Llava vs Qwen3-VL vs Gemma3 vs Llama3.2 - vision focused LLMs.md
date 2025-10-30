@@ -1,12 +1,13 @@
 <table style="width:100%">
-	<caption><a href="https://ollama.com/library/granite3.2-vision" target="_blank" rel="noopener noreferrer">Granite3.2</a> vs <a href="https://ollama.com/library/llava" target="_blank" rel="noopener noreferrer">LLaVA</a> vs <a href="https://ollama.com/library/gemma3" target="_blank" rel="noopener noreferrer">Gemma3</a> vs <a href="https://ollama.com/library/llama3.2-vision" target="_blank" rel="noopener noreferrer">Llama3.2</a> tests (2B vs 27B vs 34B vs 90B)</caption>
+	<caption><a href="https://ollama.com/library/granite3.2-vision" target="_blank" rel="noopener noreferrer">Granite3.2</a> vs <a href="https://ollama.com/library/llava" target="_blank" rel="noopener noreferrer">LLaVA</a> vs <a href="https://ollama.com/library/qwen3-vl" target="_blank" rel="noopener noreferrer">Qwen3-VL</a> vs <a href="https://ollama.com/library/gemma3" target="_blank" rel="noopener noreferrer">Gemma3</a> vs <a href="https://ollama.com/library/llama3.2-vision" target="_blank" rel="noopener noreferrer">Llama3.2</a> tests (2B vs 27B vs 32B vs 34B vs 90B)</caption>
     <thead>
         <tr>
-			<th style="width:12%"></th>
-			<th style="width:22%">granite3.2-vision:2b-fp16</th>
-			<th style="width:22%">llava:34b-v1.6-q8_0</th>
-			<th style="width:22%">gemma3:27b-it-fp16</th>
-			<th style="width:22%">llama3.2-vision:90b-instruct-q8_0</th>
+			<th style="width:15%"></th>
+			<th style="width:17%">granite3.2-vision:2b-fp16</th>
+			<th style="width:17%">llava:34b-v1.6-q8_0</th>
+			<th style="width:17%">gemma3:27b-it-fp16</th>
+			<th style="width:17%">qwen3-vl:32b-thinking-bf16</th>
+			<th style="width:17%">llama3.2-vision:90b-instruct-q8_0</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +16,7 @@
 			<td>8.8 GB</td>
 			<td>38 GB</td>
 			<td>54 GB</td>
+			<td>67 GB</td>
 			<td>101 GB</td>
         </tr>
 		<tr>
@@ -22,13 +24,14 @@
 			<td>100% GPU</td>
 			<td>72%/28% CPU/GPU</td>
 			<td>82%/18% CPU/GPU</td>
+			<td>70%/30% CPU/GPU **</td>
 			<td>89%/11% CPU/GPU</td>
         </tr>
         <tr>
 		<td>Response</td>
 			<td>
 				<img src="https://github.com/user-attachments/assets/3629a19d-7464-431f-8340-7ac5ce1af30f" alt="Granite3.2 - What does the sign say and in what language?"/>
-			        <img src="https://github.com/user-attachments/assets/49a49dd7-c042-4a77-9a03-bb9be32c70c4" alt="Granite3.2 - What timeline is this cannon from?"/>
+			    <img src="https://github.com/user-attachments/assets/49a49dd7-c042-4a77-9a03-bb9be32c70c4" alt="Granite3.2 - What timeline is this cannon from?"/>
 				<img src="https://github.com/user-attachments/assets/43c283ad-b8f1-424d-85b7-c74ee698d2a8" alt="Granite3.2 - Which tree does this belong to and is it native to UK?"/>
 			</td>
             <td>
@@ -40,6 +43,11 @@
 				<img src="https://github.com/user-attachments/assets/8f19fcc5-c134-4a14-be03-405b0231a2ae" alt="Gemma3 - What does the sign say and in what language?"/>
 				<img src="https://github.com/user-attachments/assets/4e066c22-6578-4ccd-aeed-4923f0e6afdd" alt="Gemma3 - What timeline is this cannon from?"/>
 				<img src="https://github.com/user-attachments/assets/b5299350-cb3c-424b-8f28-29c750413b38" alt="Gemma3 - Which tree does this belong to and is it native to UK?"/>
+			</td>
+			<td>
+				<img src="https://github.com/user-attachments/assets/ca3b6ad2-f6b2-4903-96b4-ad747d1e5258" alt="Qwen3-VL - What does the sign say and in what language?"/>
+				<img src="https://github.com/user-attachments/assets/04cdc873-398c-48c0-ae81-e6ae5b3cd215" alt="Qwen3-VL - What timeline is this cannon from?"/>
+				<img src="https://github.com/user-attachments/assets/bbdfd815-7c95-425a-ad56-c3b7a14e1d37" alt="Qwen3-VL - Which tree does this belong to and is it native to UK?"/>
 			</td>
 			<td>
 				<img src="https://github.com/user-attachments/assets/3edddd11-b9f3-47b4-be05-77c81ee08829" alt="Llama - What does the sign say and in what language?"/>
@@ -87,6 +95,11 @@
 			</td>
 			<td>
 				<samp>
+				**
+				</samp>
+			</td>
+			<td>
+				<samp>
 					total duration:       3m4.6938644s <br>
 					load duration:        76.2814ms <br>
 					prompt eval count:    24 token(s) <br>
@@ -101,9 +114,10 @@
     </tbody>
 	<tfoot>
 		<tr>
-		  <td colspan=5>
+		  <td colspan=6>
 			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
-			* All tests were performed on a fresh model load with no prior context and with the default settings.
+			* All tests were performed on a fresh model load with no prior context and with the default settings. <br>
+			** Different setup (28GB VRAM, 96GB RAM, 7700X CPU, Linux)
 		  </td>
 		</tr>
 	</tfoot>
