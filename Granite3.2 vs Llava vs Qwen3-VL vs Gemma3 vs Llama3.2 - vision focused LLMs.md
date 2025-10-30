@@ -95,6 +95,14 @@
 			</td>
 			<td>
 				<samp>
+				total duration:       8m37.006659738s
+				load duration:        113.918487ms
+				prompt eval count:    2053 token(s)
+				prompt eval duration: 5m30.196386234s
+				prompt eval rate:     6.22 tokens/s
+				eval count:           153 token(s)
+				eval duration:        3m6.08402554s
+				eval rate:            0.82 tokens/s
 				**
 				</samp>
 			</td>
