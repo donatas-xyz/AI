@@ -165,6 +165,48 @@ If you need a more detailed description or if there are other texts on the map t
 </pre>
 		</td>
 		</tr>
+				        <tr>
+		<td>qwen3-vl:32b-thinking-bf16 (66GB) ✔️</td>
+		<td>
+<pre>
+Here’s a summary of the text and key details from the image:  
+
+### **Make the most of your day**  
+- Buy a £1 postcard *walks* (likely a typo for *walks* or *postcard walks*) from **Ilam Park shop** or **Dovedale Barn**.  
+- Enjoy the view from the **Ilam Park tea-room garden**.  
+- Get an **orienteering map** from Ilam Park shop to explore the park (ideal for beginners).  
+- Explore the **Italian Garden and Pleasure Grounds** for quiet spots to sit and view the scenery.  
+- Visit the **Church of the Holy Cross** (interior).  
+- Follow the **Ilam Park Round Walk** (orange route on the map) to see ancient ridge and furrow fields and parkland trees.  
+
+---
+
+### **Explore a little further**  
+*Five key places to visit (numbered on the map):*  
+1. **St Bertram’s Bridge**: An ancient bridge over the River Manifold—also a great spot for playing “pooh sticks.”  
+2. **Paradise Walk**: A peaceful lime tree avenue, covered in wild garlic (spring) and buzzing with bees (summer).  
+3. **The Boil Holes**: Where water rises from underground to join the River Manifold.  
+4. **Dovedale route**: Walk to Dovedale on a quiet, picturesque path across fields.  
+
+*Note*: A new **Hinkley Bridge** is due to open in 2019.  
+
+---
+
+### **Map Highlights**  
+- **Walking route** between **Ilam Park** and **Dovedale’s Stepping Stones** (1/2 mile; avoids roads).  
+- **Ilam Park Round Walk**: 1 mile / 1.6 km (orange line on the map).  
+- Key locations:  
+  - **St Bertram’s Bridge** (1), **Paradise Walk** (2), **Boil Holes** (3), **Dovedale Barn** (open Apr–Sep).  
+  - **Cattle-free footpath** (follow the drystone wall; no stiles).  
+  - Features like **Italian Garden**, **Pleasure Grounds**, **Hinkley Hollow Natural Play**, and **Hinkley Bridge** (closed, with a new bridge planned for 2019).  
+- **River Manifold** runs through the area, with landmarks like **Hinkley Wood** and **St Bertram’s Bridge**.  
+
+The map also shows parking (P), a tea room (cup icon), and the **“Route to Ilam village, Dovedale and the Stepping Stones”** (inset map).  
+
+Let me know if you’d like more details! 🌳
+</pre>
+		</td>
+		</tr>
     </tbody>
 	<tfoot>
 		<tr>
