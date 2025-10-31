@@ -1,5 +1,5 @@
 **System specs:**  
-Windows 11, 2x48GB 6400 DDR5, R7 7700X 8/16, RTX 5070 Ti 16GB + RTX 4070 12GB.
+Qwen3:32B-F16, Windows 11, 2x48GB 6400 DDR5, R7 7700X 8/16, RTX 5070 Ti 16GB + RTX 4070 12GB.
 
 **Results:**  
 The best compromise I could achieve is `num_ctx=12288` and `num_gpu=22`. That gets me close to 28GB VRAM while still keeping 12K context window.
