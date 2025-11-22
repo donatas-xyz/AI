@@ -1,19 +1,19 @@
 <table style="width:100%">
-	<caption>OCR efforts of vision capable LLMs</caption>
+    <caption>OCR efforts of vision capable LLMs</caption>
     <thead>
         <tr>
-			<th style="width:10%">Model</th>
-			<th style="width:90%">OCR produced</th>
+            <th style="width:10%">Model</th>
+            <th style="width:90%">OCR produced</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-			<td colspan=2>
-				<a href="https://github.com/donatas-xyz/AI/blob/dev/Resources/Ilam%20Park%202.jpg"><img src="https://github.com/user-attachments/assets/f51f43a1-6066-4256-bb9d-dd624ac85184" alt="Can you read this for me?" /></a>
-			</td>
+            <td colspan=2>
+                <a href="https://github.com/donatas-xyz/AI/blob/dev/Resources/Ilam%20Park%202.jpg"><img src="https://github.com/user-attachments/assets/f51f43a1-6066-4256-bb9d-dd624ac85184" alt="Can you read this for me?" /></a>
+            </td>
         </tr>
         <tr>
-			<td>gemma3:27b-it-fp16 (54GB) ✔️</td>
+            <td>gemma3:27b-it-fp16 (54GB) ✔️</td>
             <td>
 <pre>
 Okay, I can read the information from the image for you. Here's a breakdown of the text and map details: <br>
@@ -66,11 +66,11 @@ Okay, I can read the information from the image for you. Here's a breakdown of t
 *   The map was created by the National Trust in 2019. <br>
 Let me know if you'd like me to focus on a specific part of the image or if you have any other questions!
 </pre>
-		</td>
-		</tr>
+        </td>
+        </tr>
         <tr>
-		<td>llama3.2-vision:90b-instruct-q8_0 (95GB) ✔️⚠️</td>
-		<td>
+        <td>llama3.2-vision:90b-instruct-q8_0 (95GB) ✔️⚠️</td>
+        <td>
 <pre>
 The image presents a map of Ilam Park and Dovedale, accompanied by a list of walking routes. 
 The map is divided into two sections: the left side features a numbered list with corresponding images, while the right side displays a detailed topographical map. <br>
@@ -91,11 +91,11 @@ The map is divided into two sections: the left side features a numbered list wit
 Overall, this image provides a comprehensive guide for visitors planning to explore Ilam Park and Dovedale. 
 By following the walking routes and utilizing the map features, individuals can experience the natural beauty and historical significance of these areas.
 </pre>
-		</td>
-		</tr>
+        </td>
+        </tr>
         <tr>
-		<td>granite3.2-vision:2b-fp16 (6GB) ⚠️</td>
-		<td>
+        <td>granite3.2-vision:2b-fp16 (6GB) ⚠️</td>
+        <td>
 <pre>
 <doc> Make the most of your day 
  Walking route between Ilam 
@@ -149,11 +149,11 @@ By following the walking routes and utilizing the map features, individuals can 
  Hinkley Wood 
  Crown bapham and destase rights 2019 Ordnance Survey 10025874 </doc>
 </pre>
-		</td>
-		</tr>
+        </td>
+        </tr>
         <tr>
-		<td>llava:34b-v1.6-q8_0 (37GB) ❌️</td>
-		<td>
+        <td>llava:34b-v1.6-q8_0 (37GB) ❌️</td>
+        <td>
 <pre>
 Sure, I can help with the text in the image. It appears to be a map of some sort and there are various texts overlaid on it: <br>
 - In the top left corner, there's a small text that reads "make the most of your day" followed by what seems to be a list or title that is too small to read clearly.
@@ -163,11 +163,37 @@ Sure, I can help with the text in the image. It appears to be a map of some sort
 The image itself is quite small and lacks clear resolution, so identifying specific details with precision is difficult. 
 If you need a more detailed description or if there are other texts on the map that are not visible due to the size of the image, please provide a clearer or larger version.
 </pre>
-		</td>
-		</tr>
-				        <tr>
-		<td>qwen3-vl:32b-thinking-bf16 (66GB) ✔️</td>
-		<td>
+        </td>
+        </tr>
+		                <tr>
+        <td>deepseek-ocr:3b-bf16 (6.7GB) ❌️</td>
+        <td>
+<pre>
+Walkin g rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+Walking rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+Walking rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+Walking rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+Walking rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+Walking rou te b etwe en Ilam
+Park and the Stepping Stones in
+Dovedale, avoiding roads (1½ miles)<br>
+50 more lines of the same...
+</pre>
+        </td>
+        </tr>
+                        <tr>
+        <td>qwen3-vl:32b-thinking-bf16 (66GB) ✔️</td>
+        <td>
 <pre>
 Here’s a summary of the text and key details from the image:  
 
@@ -205,15 +231,15 @@ The map also shows parking (P), a tea room (cup icon), and the **“Route to Ila
 
 Let me know if you’d like more details! 🌳
 </pre>
-		</td>
-		</tr>
+        </td>
+        </tr>
     </tbody>
-	<tfoot>
-		<tr>
-		  <td colspan=2>
-			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
-			* All tests were performed on a fresh model load with no prior context and with the default settings.
-		  </td>
-		</tr>
-	</tfoot>
+    <tfoot>
+        <tr>
+          <td colspan=2>
+            * <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
+            * All tests were performed on a fresh model load with no prior context and with the default settings.
+          </td>
+        </tr>
+    </tfoot>
 </table>
