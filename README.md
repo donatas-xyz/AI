@@ -9,7 +9,7 @@ This repository is a **collection of reproducible benchmark results for a wide r
 |---|---|---|
 | **Model performance tables** | Detailed timing, token‑rate, and prompt‑/eval statistics for each model (e.g., DeepSeek‑Coder‑V2, Granite 3.2, LLaVA, Qwen 3‑VL, Gemma 3, Llama 3.2‑vision). | Shows GPU vs CPU split, model size, and raw benchmark numbers |
 | **Coding benchmark suite** | “Write a JavaScript function to remove a specific JSON element” test run on models from ~8 GB up to ~120 GB. | Includes success/failure flags and sample code snippets for each model |
-| **Vision‑LLM OCR tests** | OCR output from image‑aware models on a map of Ilam Park. | Demonstrates the text‑extraction capabilities of Gemma 3, LLaVA, Qwen 3‑VL, and Llama 3.2‑vision |
+| **Vision‑LLM OCR tests** | OCR output from image‑aware models on a map of Ilam Park. | Demonstrates the text‑extraction capabilities of Gemma 3, LLaVA, Qwen 3‑VL, Llama 3.2‑vision and deepseek-ocr |
 | **System‑level comparisons** | Example of running the same prompt on Windows 11 vs. WSL (Ubuntu 24.04) with DeepSeek‑R1. | Provides raw timing data to illustrate environment impact |
 | **Setup & reproducibility** | Exact command‑line invocations (e.g., `ollama run deepseek-r1:32b --verbose`), hardware specs, and a note that every test was performed on a **fresh model load with no prior context**. | Guarantees that numbers are comparable across runs |
 
