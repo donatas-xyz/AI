@@ -192,6 +192,27 @@ Dovedale, avoiding roads (1½ miles)<br>
         </td>
         </tr>
                         <tr>
+        <td>glm-ocr:bf16 (2.2GB) ✔️⚠️</td>
+        <td>
+<pre>
+Make the most of your day<br>
+- Buy one of our £1 postcard walks from Ilam Park shop or Dovedale Barn
+- Take in the view from the Ilam Park tea-room garden
+- Buy an orienteering map from Ilam Park shop and explore the park – ideal for beginners
+- Explore the Italian Garden and Pleasure Grounds to find tranquil places to sit and take in the views
+- Take a look inside the church of the Holy Cross
+- Follow the Ilam Park round walk (orange route on map) to see the ancient ridge and furrow and parkland trees.<br>
+Explore a little further<br>
+Here are five great places to explore on your visit to Ilam Park and Dovedale (see the numbers on the map).<br>
+1. St Bertram’s Bridge is an ancient bridge over the River Manifold, but it’s also a great spot to play pooh sticks.
+2. Paradise Walk is a peaceful lime tree avenue, carpeted with wild garlic in spring and buzzing with bees in summer.
+3. See the Boil Holes, where water rises from underground to join the River Manifold.
+4. Walk to Dovedale on a quiet and picturesque route across the fields.<br>
+NOTE: A new Hinkley Bridge is due to open in 2019.
+</pre>
+        </td>
+        </tr>
+                        <tr>
         <td>qwen3-vl:32b-thinking-bf16 (66GB) ✔️</td>
         <td>
 <pre>
