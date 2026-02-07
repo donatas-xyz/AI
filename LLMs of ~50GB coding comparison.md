@@ -137,6 +137,48 @@ console.log(resultJson);
 </pre>
 		</td>
 		</tr>
+        <tr>
+<td>glm-4.7-flash:bf16 (59GB) ✔️</td>
+            <td>
+<pre>
+function removeUserInstruction(jsonString) {
+  try {
+    // 1. Parse the string into a JavaScript object
+    const data = JSON.parse(jsonString);<br>
+    // 2. Check if the data is an array (common for chat history)
+    if (Array.isArray(data)) {
+      // 3. Filter out the specific message
+      const filteredData = data.filter(
+        (item) =>
+          !(
+            item.role === "user" &&
+            item.content ===
+              "Return a JSON object that uses the SAY command to say what you're thinking."
+          )
+      );<br> 
+      // 4. Return the result as a JSON string
+      return JSON.stringify(filteredData);
+    }<br>
+    // If the input isn't an array, return the original string
+    return jsonString;
+  } catch (error) {
+    console.error("Error parsing JSON:", error);
+    return jsonString;
+  }
+}<br>
+// --- Example Usage ---<br>
+const inputJson = `
+[
+  { "role": "system", "content": "You are a helpful assistant." },
+  { "role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking." },
+  { "role": "assistant", "content": "Sure, here is the output." }
+]
+`;<br>
+const result = removeUserInstruction(inputJson);
+console.log(result);
+</pre>
+    </td>
+    </tr>
     </tbody>
 	<tfoot>
 		<tr>
