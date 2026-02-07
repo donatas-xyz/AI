@@ -1,26 +1,26 @@
 <table style="width:100%">
-	<caption>LLMs of ~15GB coding comparison</caption>
+  <caption>LLMs of ~15GB coding comparison</caption>
     <thead>
         <tr>
-			<th style="width:10%">Model</th>
-			<th style="width:45%">Code produced</th>
+      <th style="width:10%">Model</th>
+      <th style="width:45%">Code produced</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-			<td colspan=2>
-			Please write me a JavaScript function to remove 
+      <td colspan=2>
+      Please write me a JavaScript function to remove 
 <pre>
 {
-	"role": "user",
-	"content": "Return a JSON object that uses the SAY command to say what you're thinking."
+  "role": "user",
+  "content": "Return a JSON object that uses the SAY command to say what you're thinking."
 } 
 </pre> 
-			elements from a JSON string.
-			</td>
+      elements from a JSON string.
+      </td>
         </tr>
         <tr>
-			<td>granite3.2:8b-instruct-fp16 (16GB) ❌️</td>
+      <td>granite3.2:8b-instruct-fp16 (16GB) ❌️</td>
             <td>
 <pre>
 function removeSAYCommand(jsonString) {
@@ -41,10 +41,10 @@ let jsonString = `{
 }`; <br>
 console.log(removeSAYCommand(jsonString));
 </pre>
-		</td>
-		</tr>
-		        <tr>
-			<td>phi4:14b-q8_0 (15GB) ✔️</td>
+    </td>
+    </tr>
+            <tr>
+      <td>phi4:14b-q8_0 (15GB) ✔️</td>
             <td>
 <pre>
 function removeSpecificElements(jsonString) {
@@ -82,11 +82,11 @@ const jsonInput = `[
 ]`; <br>
 console.log(removeSpecificElements(jsonInput));
 </pre>
-		</td>
-		</tr>
-		<tr>
-		<td>deepseek-coder-v2:16b-lite-instruct-q8_0 (16GB) ⚠️</td>
-		<td>
+    </td>
+    </tr>
+    <tr>
+    <td>deepseek-coder-v2:16b-lite-instruct-q8_0 (16GB) ⚠️</td>
+    <td>
 <pre>
 function removeElementFromJson(jsonString, elementToRemove) {
     // Parse the JSON string into a JavaScript object
@@ -108,10 +108,10 @@ let jsonString = '[{"role": "user", "content": "Return a JSON object that uses t
 let elementToRemove = {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you\'re thinking."}; <br>
 console.log(removeElementFromJson(jsonString, elementToRemove));
 </pre>
-			</td>
-			</tr>
-	    <tr>
-		<td>gemma2:27b (15GB) ✔️⚠️</td>
+      </td>
+      </tr>
+      <tr>
+    <td>gemma2:27b (15GB) ✔️⚠️</td>
             <td>
 <pre>
 function removeThinkingElements(jsonString) {
@@ -128,10 +128,10 @@ const originalJson = '[{"role": "user", "content": "Return a JSON object that us
 const cleanedJson = removeThinkingElements(originalJson);
 console.log(cleanedJson); // Output: '[{"role": "assistant", "content": "I am thinking about how to best respond to your request."}]'
 </pre>
-		</td>
-		</tr>
-	    <tr>
-		<td>gpt-oss:20b (13GB) ✔️</td>
+    </td>
+    </tr>
+      <tr>
+    <td>gpt-oss:20b (13GB) ✔️</td>
             <td>
 <pre>
 function removeSpecificElements(jsonString) {
@@ -184,15 +184,65 @@ const raw = `[
 ]`; <br>  
 console.log(removeSpecificElements(raw));
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
+      <tr>
+    <td>qwen3:14b-q8_0 (15GB) ✔️</td>
+            <td>
+<pre>
+function removeUserContent(jsonString) {
+  let data;
+  try {
+    data = JSON.parse(jsonString);
+  } catch (e) {
+    // If parsing fails, return the original string
+    return jsonString;
+  }<br> 
+  // Handle both array and single object cases
+  const isArray = Array.isArray(data);<br> 
+  let processedData;<br> 
+  if (isArray) {
+    processedData = data.filter(item => {
+      return !(
+        item.role === 'user' &&
+        item.content === "Return a JSON object that uses the SAY command to say what you're thinking."
+      );
+    });
+  } else {
+    // If it's not an array, check if it matches the pattern
+    if (
+      data.role === 'user' &&
+      data.content === "Return a JSON object that uses the SAY command to say what you're thinking."
+    ) {
+      processedData = [];
+    } else {
+      processedData = [data];
+    }
+  }<br> 
+  return JSON.stringify(processedData);
+}<br> 
+const rawJson = `
+[
+  { "role": "system", "content": "Welcome!" },
+  {
+    "role": "user",
+    "content": "Return a JSON object that uses the SAY command to say what you're thinking."
+  },
+  { "role": "assistant", "content": "Ready?" }
+]
+`;<br> 
+const cleaned = removeUserContent(rawJson);
+console.log(cleaned);<br> 
+</pre>
+    </td>
+    </tr>
     </tbody>
-	<tfoot>
-		<tr>
-		  <td colspan=2>
-			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
-			* All tests were performed on a fresh model load with no prior context and with the default settings.
-		  </td>
-		</tr>
-	</tfoot>
+  <tfoot>
+    <tr>
+      <td colspan=2>
+      * <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
+      * All tests were performed on a fresh model load with no prior context and with the default settings.
+      </td>
+    </tr>
+  </tfoot>
 </table>
