@@ -1,26 +1,26 @@
 <table style="width:100%">
-	<caption>LLMs of ~70GB and over coding comparison</caption>
+  <caption>LLMs of ~70GB and over coding comparison</caption>
     <thead>
         <tr>
-			<th style="width:10%">Model</th>
-			<th style="width:90%">Code produced</th>
+      <th style="width:10%">Model</th>
+      <th style="width:90%">Code produced</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-			<td colspan=2>
-			Please write me a JavaScript function to remove 
+      <td colspan=2>
+      Please write me a JavaScript function to remove 
 <pre>
 {
-	"role": "user",
-	"content": "Return a JSON object that uses the SAY command to say what you're thinking."
+  "role": "user",
+  "content": "Return a JSON object that uses the SAY command to say what you're thinking."
 } 
 </pre> 
-			elements from a JSON string.
-			</td>
+      elements from a JSON string.
+      </td>
         </tr>
         <tr>
-			<td>command-a:111b-03-2025-q4_K_M (67GB) ✔️</td>
+      <td>command-a:111b-03-2025-q4_K_M (67GB) ✔️</td>
             <td>
 <pre>
 /**
@@ -57,10 +57,10 @@ const inputJson = `[
 const outputJson = removeSpecificElementsFromJson(inputJson);
 console.log(outputJson);
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
         <tr>
-			<td>exaone-deep:32b-fp16 (64GB) ✔️</td>
+      <td>exaone-deep:32b-fp16 (64GB) ✔️</td>
             <td>
 <pre>
 function removeElements(jsonStr) {
@@ -79,10 +79,10 @@ function removeElements(jsonStr) {
   return JSON.stringify(filtered);
 }
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
         <tr>
-			<td>mistral-large:123b (73GB) ✔️</td>
+      <td>mistral-large:123b (73GB) ✔️</td>
             <td>
 <pre>
 function removeSpecificElements(jsonString) {
@@ -104,10 +104,10 @@ const inputJsonString = `[
 const outputJsonString = removeSpecificElements(inputJsonString);
 console.log(outputJsonString);
 </pre>
-		</td>
-		</tr>
-		        <tr>
-			<td>llama3.3:70b-instruct-q8_0 (74GB) ✔️</td>
+    </td>
+    </tr>
+            <tr>
+      <td>llama3.3:70b-instruct-q8_0 (74GB) ✔️</td>
             <td>
 <pre>
 /**
@@ -140,11 +140,11 @@ const targetRole = 'user';
 const targetContent = 'Return a JSON object that uses the SAY command to say what you'; <br>
 console.log(removeElements(jsonString, targetRole, targetContent));
 </pre>
-		</td>
-		</tr>
-		<tr>
-		<td>qwen3:32b-fp16 (66GB) ✔️</td>
-		<td>
+    </td>
+    </tr>
+    <tr>
+    <td>qwen3:32b-fp16 (66GB) ✔️</td>
+    <td>
 <pre>
 function removeUserSAYCommands(jsonString) {
   try {
@@ -177,11 +177,11 @@ const input = `
 const result = removeUserSAYCommands(input);
 console.log(result);
 </pre>
-			</td>
-			</tr>
-		<tr>
-		<td>qwen3-coder:30b-a3b-fp16 (61GB) ✔️</td>
-		<td>
+      </td>
+      </tr>
+    <tr>
+    <td>qwen3-coder:30b-a3b-fp16 (61GB) ✔️</td>
+    <td>
 <pre>
 function removeUserThinkingElement(jsonString) {
     try {
@@ -226,36 +226,36 @@ const inputJson = `[
 const result = removeUserThinkingElement(inputJson);
 console.log(result);
 </pre>
-			</td>
-			</tr>
-	    <tr>
-		<td>wizardlm2:8x22b-q4_0 (79GB) ✔️</td>
+      </td>
+      </tr>
+      <tr>
+    <td>wizardlm2:8x22b-q4_0 (79GB) ✔️</td>
             <td>
 <pre>
 function removeSpecifiedElement(jsonString) {
-	// Parse the JSON string into an array of objects
-	let jsonArray = JSON.parse(jsonString); <br>
-	// Filter out the specified element
-	let filteredArray = jsonArray.filter(obj => {
-		return !(obj.role === "user" && obj.content === "Return a JSON object that uses the SAY command to say what you're thinking.");
-	}); <br>
-	// Convert the filtered array back into a JSON string
-	let updatedJsonString = JSON.stringify(filteredArray); <br>
-	return updatedJsonString;
+  // Parse the JSON string into an array of objects
+  let jsonArray = JSON.parse(jsonString); <br>
+  // Filter out the specified element
+  let filteredArray = jsonArray.filter(obj => {
+    return !(obj.role === "user" && obj.content === "Return a JSON object that uses the SAY command to say what you're thinking.");
+  }); <br>
+  // Convert the filtered array back into a JSON string
+  let updatedJsonString = JSON.stringify(filteredArray); <br>
+  return updatedJsonString;
 } <br>
 // Example usage:
 const originalJsonString = `[
-	{"role": "system", "content": "Hello, how can I assist you?"},
-	{"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
-	{"role": "assistant", "content": "I'm thinking about how to best help you today."}
+  {"role": "system", "content": "Hello, how can I assist you?"},
+  {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role": "assistant", "content": "I'm thinking about how to best help you today."}
 ]`; <br>
 const updatedJsonString = removeSpecifiedElement(originalJsonString);
 console.log(updatedJsonString);
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
         <tr>
-			<td>r1-1776:70b-distill-llama-q8_0 (74GB) ❌️</td>
+      <td>r1-1776:70b-distill-llama-q8_0 (74GB) ❌️</td>
             <td>
 <pre>
 function removeUserElements(jsonStr) {
@@ -272,10 +272,10 @@ const input = `[{"role": "user", "content": "{\\n\"role\": \"assistant\", ..."},
 const output = removeUserElements(input);
 console.log(output); // Output: [{"role":"assistant","content":"Hello"}]
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
         <tr>
-			<td>gpt-oss:120b (65GB) ✔️</td>
+      <td>gpt-oss:120b (65GB) ✔️</td>
             <td>
 <pre>
 function removeTargetElements(jsonStr) {
@@ -342,15 +342,157 @@ const input = `[
 const output = removeTargetElements(input);
 console.log(output);
 </pre>
-		</td>
-		</tr>
+    </td>
+    </tr>
+        <tr>
+      <td>qwen3-coder-next:q8_0 (84GB) ✔️</td>
+            <td>
+<pre>
+function removeSpecificMessage(jsonString) {
+  try {
+    const data = JSON.parse(jsonString);<br>
+    // If it's an array of messages (common in chat APIs), filter out the target object
+    if (Array.isArray(data)) {
+      const filtered = data.filter(
+        item =>
+          item.role !== 'user' ||
+          item.content !== 'Return a JSON object that uses the SAY command to say what you\'re thinking.'
+      );
+      return JSON.stringify(filtered);
+    }<br>
+    // If it's a single object and matches exactly, return an empty object/array (or original unchanged)
+    if (
+      data &&
+      data.role === 'user' &&
+      data.content === 'Return a JSON object that uses the SAY command to say what you\'re thinking.'
+    ) {
+      return JSON.stringify({}); // or [] — depends on your use case
+    }<br>
+    // Otherwise, return the original JSON string (no match found)
+    return jsonString;
+  } catch (e) {
+    throw new Error('Invalid JSON input');
+  }
+}<br>
+const input = JSON.stringify([
+  { role: "user", content: "Hello!" },
+  { role: "user", content: "Return a JSON object that uses the SAY command to say what you're thinking." },
+  { role: "assistant", content: "Sure!" }
+]);<br>
+const result = removeSpecificMessage(input);
+console.log(result);
+</pre>
+    </td>
+    </tr>
+        <tr>
+      <td>nemotron-3-nano:30b-a3b-fp16 (63GB) ❌️</td>
+            <td>
+<pre>
+/**
+ * Sanitises a JSON payload by stripping out unwanted user messages.
+ *
+ * @param {string} jsonStr  - A string that contains valid JSON (e.g. an array or object).
+ * @returns {string}        - JSON string with the matching elements removed.
+ *
+ * @example
+ *   const raw = `[{ "role":"system", "content":"Hello!" },{
+ *                   "role":"user",
+ *                   "content":"Return a JSON object that uses the SAY command to say what you're thinking."
+ *                }]`
+ *   console.log(removeUserSayCommand(raw));
+ *
+ *   // → "[{\"role\":\"system\",\"content\":\"Hello!\"}]"
+ */
+function removeUserSayCommand(jsonStr) {
+  // -----------------------------------------------------------
+  // 1️⃣ Parse the incoming JSON – if it is malformed we just return it.
+  // -----------------------------------------------------------
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonStr);
+  } catch (_) {
+    // If parsing fails, we cannot safely modify anything → return as‑is.
+    return jsonStr;
+  }<br>
+  // -----------------------------------------------------------
+  // 2️⃣ Helper that decides whether an item matches the "user SAY" pattern.
+  // -----------------------------------------------------------
+  const isTarget = (item) => {
+    // Guard: only plain objects with both keys we care about
+    if (!item || typeof item !== 'object') return false;<br>
+    // Exact match of role and content *or* a partial “SAY” check?
+    const exactMatch =
+      item.role === 'user' &&
+      typeof item.content === 'string' &&
+      /Return a JSON object that uses the SAY command to say what you're thinking\./.test(item.content);<br>
+    // If you only need to filter by role, drop the regex test:
+    // return item.role === 'user';<br>
+    return exactMatch;
+  };<br>
+  // -----------------------------------------------------------
+  // 3️⃣ Remove all matching entries.
+  // -----------------------------------------------------------
+  const clean = (data) => {
+    // If we have an **array**, filter it element‑wise
+    if (Array.isArray(data)) {
+      return data
+        .map(clean)                     // recurse in case a nested object/array exists
+        .filter(Boolean);               // drop any `null` / `undefined` that might appear after cleaning nested elements
+    }<br>
+    // If we have a **plain object**, walk its values but keep the structure.
+    else if (data !== null && typeof data === 'object') {
+      const cleanedObj = {};
+      for (const [k, v] of Object.entries(data)) {
+        const cleanedVal = clean(v);
+        // If `clean` returns undefined/null we simply omit that key,
+        // which effectively removes the whole property from the final JSON.
+        if (cleanedVal !== undefined && cleanedVal !== null) {
+          cleanedObj[k] = cleanedVal;
+        }
+      }
+      return Object.keys(cleanedObj).length ? cleanedObj : undefined; // drop empty objects later
+    }<br>
+    // Primitives are returned unchanged.
+    else {
+      return data;
+    }
+  };<br>
+  const result = clean(parsed);<br>
+  // -----------------------------------------------------------
+  // 4️⃣ Convert back to JSON string. If the cleaned value is `null`
+  // or an empty object/array we just return an empty string (or can
+  // decide on a different sentinel value).
+  // -----------------------------------------------------------
+  return result === null || Object.keys(result).length === 0
+    ? ''
+    : JSON.stringify(result);
+}<br>
+/* ----------------------------------------------------------------------
+   ------------------------------- EXAMPLE -------------------------------
+   ---------------------------------------------------------------------- */<br>
+const rawJson = `
+[
+  { "role": "system", "content": "Welcome!" },
+  {
+    "role": "user",
+    "content": "Return a JSON object that uses the SAY command to say what you're thinking."
+  },
+  { "role": "assistant", "content": "Ready?" }
+]
+`;<br>
+const cleaned = removeUserSayCommand(rawJson);
+console.log('🧹 Cleaned JSON string:');
+console.log(cleaned);
+</pre>
+    </td>
+    </tr>
     </tbody>
-	<tfoot>
-		<tr>
-		  <td colspan=2>
-			* <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
-			* All tests were performed on a fresh model load with no prior context and with the default settings.
-		  </td>
-		</tr>
-	</tfoot>
+  <tfoot>
+    <tr>
+      <td colspan=2>
+      * <a href="https://github.com/donatas-xyz/AI/discussions/1" target="_blank" rel="noopener noreferrer">Setup used</a> <br>
+      * All tests were performed on a fresh model load with no prior context and with the default settings.
+      </td>
+    </tr>
+  </tfoot>
 </table>
