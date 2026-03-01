@@ -236,6 +236,56 @@ console.log(cleaned);<br>
 </pre>
     </td>
     </tr>
+<tr>
+    <td>qwen3.5:27b-q4_K_M (17GB) ❌️</td>
+            <td>
+<pre>
+/**
+ * Removes objects with specified role and content from a JSON array.
+ * @param {string} jsonString - The input JSON string containing an array
+ * @param {Object} filterCriteria - Criteria to match and remove objects
+ * @returns {string} - The filtered JSON string
+ */
+function removeJsonElements(jsonString, filterCriteria = {}) {
+  // Validate input
+  if (typeof jsonString !== 'string') {
+    throw new TypeError('Input must be a string');
+  }<br>
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonString);
+  } catch (error) {
+    throw new Error(`Invalid JSON: ${error.message}`);
+  }<br>
+  // Ensure parsed result is an array
+  if (!Array.isArray(parsed)) {
+    throw new Error('JSON root must be an array');
+  }<br>
+  // Default filter criteria
+  const defaults = {
+    role: 'user',
+    content: 'Return a JSON object that uses the SAY command to say what you\'re thinking.'
+  };<br>
+  const criteria = { ...defaults, ...filterCriteria };<br>
+  // Filter out matching objects
+  const filtered = parsed.filter(item => {
+    return (
+      (criteria.role !== undefined && item.role !== criteria.role) ||
+      (criteria.content !== undefined && item.content !== criteria.content)
+    );
+  });<br>
+  return JSON.stringify(filtered);
+}<br>
+const jsonInput = `[
+  {"role": "user", "content": "Return a JSON object that uses the SAY command to say what you're thinking."},
+  {"role": "assistant", "content": "Here is the response"},
+  {"role": "user", "content": "What is 2+2?"}
+]`;<br>
+const result = removeJsonElements(jsonInput);
+console.log(result);
+</pre>
+    </td>
+    </tr>    
     </tbody>
   <tfoot>
     <tr>
